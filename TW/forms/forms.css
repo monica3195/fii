@@ -1,0 +1,53 @@
+/* 	@Author : Dimitrie Pirghie
+	@Brief  : Stylesheet for register form
+*/
+.register_form{
+	position:fixed;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.register_form_container{
+	 display:inline-block;
+	 width: 65%;
+}
+
+.register_form_container input{
+	display : block;
+	width:100%;
+	text-align:left;
+	border-radius: 8px;
+	margin:1%;
+}
+
+legend{
+	font-size : 18pt;
+}
+
+fieldset{
+	border-radius: 10px;
+}
+
+/*input, textarea {
+	border: 3px solid #8C8C8C;
+	font-size : 14px;
+	border-radius: 4px;
+	height: 30px;
+	padding: 10px 15px;
+	margin: 20px;
+}*/
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+	font-size : 18pt;
+}
+
+input[type="submit"]{
+	text-align: center;
+	text-vertical-align: center;
+	font-size: 25pt;
+	background: #222;
+	color: #eee;
+}

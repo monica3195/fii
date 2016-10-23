@@ -1,0 +1,13 @@
+Prefixele binare sunt prefixele anexate termenilor bit, octet sau biți pe secundă (bps) pentru a măsura capacități mari de stocare sau și viteze de transfer ale datelor.Așa cum este de așteptat, aceste prefixe se aseamănă cu cele comune din SI, cu diferența că, deși aproximează valorile din SI în privința cantității, prefixele binare denotă ca valori exacte numai puteri ale lui 2:
+
+Noile prefixe binare
+Nume(cum se citește) Abreviere(folosită în scris) Mărimea Mărimea corespunzătoare în SI(listată cu titlu informativ) 
+kibi  Ki 210 = 10241 =  1 024 k  103 = 10001 =  1 000 
+mebi  Mi 220 = 10242 =  1 048 576 M  106 = 10002 =  1 000 000 
+gibi  Gi 230 = 10243 =  1 073 741 824 G  109 = 10003 =  1 000 000 000 
+tebi  Ti 240 = 10244 =  1 099 511 627 776 T  1012 = 10004 =  1 000 000 000 000 
+pebi  Pi 250 = 10245 =  1 125 899 906 842 624 P  1015 = 10005 =  1 000 000 000 000 000 
+exbi  Ei 260 = 10246 =  1 152 921 504 606 846 976 E  1018 = 10006 =  1 000 000 000 000 000 000 
+zebi  Zi 270 = 10247 =  1 180 591 620 717 411 303 424 Z  1021 = 10007 =  1 000 000 000 000 000 000 000 
+yobi  Yi 280 = 10248 =  1 208 925 819 614 629 174 706 176 Y  1024 = 10008 =  1 000 000 000 000 000 000 000 000 
+Prescurtările sunt similare cu cele din SI, cu unica deosebire a lui "K", scris cu minusculă în SI.Motivul introducerii acestor prefixe provine de la faptul că până nu de mult, un kilobit de date conținea 1.024 de biți, ceea ce reprezenta de obicei o sursă de confuzie datorită convenției generale propagată de SI conform căreia "ar trebui" să aibă doar 1.000 de biți. Producătorii de discuri dure folosesc terminologia SI; astfel, pe un disc cu capacitate afișată de 30 GB vor încăpea doar aproximativ 28 x 230 (respectiv 30 x 109) octeți. Unitățile SI se mai folosesc și în telecomunicații, unde o conexiune despre care se spune că suportă transfer de 1 Mbit/s va avea de obicei limita maximă la 106 biți pe secundă.Categorie:Logică binară

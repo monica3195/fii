@@ -1,0 +1,1 @@
+sistemul (numit și sistemul hexadecimal) este sistemul de numerație în 16, de cu ajutorul simbolurilor (cifrelor hexazecimale) 0-9 și a-f. sistemul este întâlnit mai în domeniul informatic, unde este folosit intens deoarece un cuprinde exact două cifre hexazecimale. 

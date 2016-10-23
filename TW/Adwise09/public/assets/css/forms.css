@@ -1,0 +1,45 @@
+.form {
+    width: 1263px;
+    margin: 0 auto;
+}
+
+.register_form_container{
+	display:inline-block;
+	width: 800px;
+    text-align: center;
+    margin-left: 231.5px;
+    margin-top: 200px;
+}
+
+.username-or-email,
+.password,
+.login-button {
+	display : block;
+	width:700px;
+	text-align:left;
+	border-radius: 8px;
+	margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.head-legend {
+	font-size : 18pt;
+}
+
+.input-fields-login {
+	border-radius: 10px;
+}
+
+.username-or-email,
+.password {
+	font-size : 18pt;
+}
+
+.login-button {
+	text-align: center;
+	text-vertical-align: center;
+	font-size: 25pt;
+	background: #000000;
+	color: #FFFFFF;
+}

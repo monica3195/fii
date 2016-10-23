@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.security.KeyPairGenerator"/>
+<fullyQualifiedTypeName name="java.security.KeyPair"/>
+<fullyQualifiedTypeName name="java.security.Signature"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.security.spec.X509EncodedKeySpec"/>
+<fullyQualifiedTypeName name="java.security.KeyFactory"/>
+<fullyQualifiedTypeName name="java.security.PublicKey"/>
+<fullyQualifiedTypeName name="java.util.BitSet"/>
+<fullyQualifiedTypeName name="java.lang.Byte"/>
+<fullyQualifiedTypeName name="java.security.interfaces.RSAPrivateKey"/>
+<fullyQualifiedTypeName name="java.security.interfaces.RSAPublicKey"/>
+</qualifiedTypeNameHistroy>

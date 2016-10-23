@@ -1,0 +1,6 @@
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\bin\Debug\Tema1CN(Console).exe.config
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\bin\Debug\Tema1CN(Console).exe
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\bin\Debug\Tema1CN(Console).pdb
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\obj\Debug\Tema1CN(Console).csprojResolveAssemblyReference.cache
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\obj\Debug\Tema1CN(Console).exe
+D:\Facultate\Visual Studio\Tema1CN(Console)\Tema1CN(Console)\obj\Debug\Tema1CN(Console).pdb

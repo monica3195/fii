@@ -1,0 +1,15 @@
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\Tema5CN.exe.config
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\Tema5CN.exe
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\Tema5CN.pdb
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.csprojResolveAssemblyReference.cache
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.Form1.resources
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.Properties.Resources.resources
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.csproj.GenerateResource.Cache
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.exe
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\obj\Debug\Tema5CN.pdb
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.dll
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.IO.dll
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.pdb
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.xml
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.IO.pdb
+D:\Facultate\Visual Studio\Tema5CN\Tema5CN\bin\Debug\MathNet.Numerics.IO.xml

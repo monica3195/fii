@@ -1,0 +1,6 @@
+Bodnar Adrian: ActivityDiagram si ClassDiagram
+Andrisan Danut: UseCaseDiagram si SequenceDiagram
+Oniciuc Oriana: StateChartDiagram
+Hij Lucian: PackageDiagram si CollaborationDiagram
+
+Am dori distribuire egala a punctajului.

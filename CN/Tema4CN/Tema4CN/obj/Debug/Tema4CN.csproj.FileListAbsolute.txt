@@ -1,0 +1,9 @@
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\bin\Debug\Tema4CN.exe.config
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.csprojResolveAssemblyReference.cache
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.Form1.resources
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.Properties.Resources.resources
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.csproj.GenerateResource.Cache
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\bin\Debug\Tema4CN.exe
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\bin\Debug\Tema4CN.pdb
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.exe
+D:\Facultate\Visual Studio\Tema4CN\Tema4CN\obj\Debug\Tema4CN.pdb

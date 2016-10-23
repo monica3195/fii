@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS_Output>
+  <S id="1" offset="0">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="religie" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.1" offset="0">Religia</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="1.2" offset="8">este</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="credință" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.3" offset="13">credința</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="1.4" offset="22">în</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="supranatural" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.5" offset="25">supranatural</W>
+    <W LEMMA="," MSD="COMMA" id="1.6" offset="37">,</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="sacru" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.7" offset="39">sacru</W>
+    <W LEMMA="sau" MSD="Cs" POS="CONJUNCTION" id="1.8" offset="45">sau</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="divin" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.9" offset="49">divin</W>
+    <W LEMMA="," MSD="COMMA" id="1.10" offset="54">,</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="1.11" offset="56">și</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="cod" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="1.12" offset="59">codul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="moral" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.13" offset="65">moral</W>
+    <W LEMMA="," MSD="COMMA" id="1.14" offset="70">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="practică" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="1.15" offset="72">practicile</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="1.16" offset="83">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="ordin" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="1.17" offset="86">ordin</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="ritual" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.18" offset="92">ritual</W>
+    <W LEMMA="," MSD="COMMA" id="1.19" offset="98">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="dogmă" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="1.20" offset="100">dogmele</W>
+    <W LEMMA="," MSD="COMMA" id="1.21" offset="107">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="valoare" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="1.22" offset="109">valorile</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="1.23" offset="118">și</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="instituție" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="1.24" offset="121">instituțiile</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:asocia(tranzitiv)" Gender="feminine" LEMMA="asociat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="1.25" offset="134">asociate</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="1.26" offset="143">cu</W>
+    <W Case="direct" Gender="feminine" LEMMA="acest" MSD="Dd3fsr---e" Number="singular" POS="DETERMINER" Person="third" Positioning="prenominal" Type="demonstrative" id="1.27" offset="146">această</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="credință" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="1.28" offset="154">credință</W>
+    <W LEMMA="." MSD="PERIOD" id="1.29" offset="162">.</W>
+  </S>
+  <S id="2" offset="164">
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="2.1" offset="0">În</W>
+    <W Case="direct" Definiteness="yes" EXTRA="ParticipleLemma:cure(intranzitiv)" Gender="masculine" LEMMA="curs" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="2.2" offset="3">cursul</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="dezvoltare" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="2.3" offset="10">dezvoltării</W>
+    <W Case="oblique" Gender="feminine" LEMMA="său" MSD="Ds3fsos" Number="singular" POS="DETERMINER" Person="third" Possessor_number="singular" Type="possessive" id="2.4" offset="22">sale</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="religie" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="2.5" offset="27">religia</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="2.6" offset="35">a</W>
+    <W EXTRA="tranzitiv" LEMMA="lua" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="2.7" offset="37">luat</W>
+    <W Case="direct" Gender="masculine" LEMMA="un" MSD="Timsr" Number="singular" POS="ARTICLE" Type="indefinite" id="2.8" offset="42">un</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="imens" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="2.9" offset="45">imens</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="număr" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="2.10" offset="51">număr</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="2.11" offset="57">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="formă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="2.12" offset="60">forme</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="2.13" offset="66">în</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="divers" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="2.14" offset="69">diverse</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="cultură" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="2.15" offset="77">culturi</W>
+    <W LEMMA="sau" MSD="Cs" POS="CONJUNCTION" id="2.16" offset="85">sau</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="persoană" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="2.17" offset="89">persoane</W>
+    <W LEMMA="." MSD="PERIOD" id="2.18" offset="97">.</W>
+  </S>
+</POS_Output>

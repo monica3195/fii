@@ -1,0 +1,2596 @@
+// Tema 1
+
+// Daca se doreste utilizarea bibliotecii GLUT trebuie
+// inclus fisierul header GL/glut.h (acesta va include
+// la GL/gl.h si GL/glu.h, fisierele header pentru
+// utilizarea bibliotecii OpenGL). Functiile din biblioteca
+// OpenGL sunt prefixate cu gl, cele din GLU cu glu si
+// cele din GLUT cu glut.
+
+// #include <GL/glut.h>
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+#include "glut.h"
+
+unsigned char prevKey;
+
+void Display1() {
+   glColor3f(0.2,0.15,0.88); // albastru
+   glBegin(GL_LINES); // trasarea unei linii
+      glVertex2i(1,1); // coordonatele unui varf
+      glVertex2i(-1,-1);
+   glEnd();
+
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_LINES);
+      glVertex2i(-1,1);
+      glVertex2i(1,-1);
+   glEnd();
+
+   glBegin(GL_LINES);
+      glVertex2d(-0.5,0);
+      glVertex2d(0.5,0);
+   glEnd();
+}
+
+void Display2() {
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_LINES); 
+      glVertex2f(1.0,1.0); 
+      glVertex2f(0.9,0.9); 
+      glVertex2f(0.8,0.8); 
+      glVertex2f(0.7,0.7); 
+      glVertex2f(0.6,0.6); 
+      glVertex2f(0.5,0.5); 
+      glVertex2f(-0.5,-0.5); 
+      glVertex2f(-1.0,-1.0);
+   glEnd();
+}
+
+void Display3() {
+   // trasare puncte GL_POINTS : deseneaza n puncte
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_POINTS); 
+		glVertex2f(0.5,0.5);
+		glVertex2f(0.5,-0.5);
+		glVertex2f(-0.5,0.5);
+		glVertex2f(-0.5,-0.5);
+   glEnd();
+}
+
+void Display4() {
+   glColor3f(1,0.1,0.1); // rosu
+   // trasare linie poligonala GL_LINE_STRIP : (v0,v1), (v1,v2), (v_{n-2},v_{n-1})
+   glBegin(GL_LINE_STRIP); 
+		glVertex2f(1,1);
+		glVertex2f(1,0.85);
+		glVertex2f(0.55,0.65);
+		glVertex2f(0.55,0.5);
+   glEnd();
+}
+
+void Display5() {
+   glColor3f(1,0.1,0.1); // rosu
+   // trasare linie poligonala inchisa GL_LINE_LOOP : (v0,v1), (v1,v2), (v_{n-1},v0)
+   glBegin(GL_LINE_LOOP); 
+		glVertex2f(1,1);
+		glVertex2f(1,0.85);
+		glVertex2f(0.55,0.65);
+		glVertex2f(0.55,0.5);
+		glVertex2f(1,1);
+   glEnd();
+}
+
+void Display6() {
+   glColor3f(1,0.1,0.1); // rosu
+   // trasare triunghiuri GL_TRIANGLES : (v0,v1,v2), (v3,v4,v5), ...
+   glBegin(GL_TRIANGLES); 
+		glVertex2f(1,1);
+		glVertex2f(1,0.85);
+		glVertex2f(0.85,0.85);
+
+		glVertex2f(-1,-1);
+		glVertex2f(-1,-0.85);
+		glVertex2f(-0.85,-0.85);
+   glEnd();
+}
+
+void Display7() {
+   // trasare patrulatere GL_QUADS : (v0,v1,v2,v3), (v4,v5,v6,v7), ...
+	glColor3f(1,0.1,0.1); 
+	glBegin(GL_QUADS); 
+		glVertex2f(1,1);
+		glVertex2f(1,0.5);
+		glVertex2f(0.5,0.5);
+		glVertex2f(0.3,0.7);
+   glEnd();
+}
+
+void Display8() {
+   // trasare poligon convex GL_QUADS : (v0,v1,v2, ..., v_{n-1})
+	glColor3f(0.2,0.15,0.88);
+	glBegin(GL_POLYGON);	
+		glVertex2f(0.4,0.7);
+		glVertex2f(0.8,0);
+		glVertex2f(0.4,-0.7);
+		glVertex2f(-0.4,-0.7);
+		glVertex2f(-0.8,0);
+		glVertex2f(-0.4,0.7);
+	glEnd();
+
+	glColor3f(1,0.1,0.1); 
+	glBegin(GL_POLYGON);	
+		glVertex2f(0.3,0.5);
+		glVertex2f(0.6,0);
+		glVertex2f(0.3,-0.5);
+		glVertex2f(-0.3,-0.5);
+		glVertex2f(-0.6,0);
+		glVertex2f(-0.3,0.5);
+	glEnd();
+
+	glColor3f(1,1,1); 
+	glBegin(GL_POLYGON);
+		glVertex2f(0.29,0.49);
+		glVertex2f(0.59,0);
+		glVertex2f(0.29,-0.49);
+		glVertex2f(-0.29,-0.49);
+		glVertex2f(-0.59,0);
+		glVertex2f(-0.29,0.49);
+	glEnd();
+}
+
+void Init(void) {
+   // specifica culoarea unui buffer dupa ce acesta
+   // a fost sters utilizand functia glClear. Ultimul
+   // argument reprezinta transparenta (1 - opacitate
+   // completa, 0 - transparenta totala)
+   glClearColor(1.0,1.0,1.0,1.0);
+
+   // grosimea liniilor
+   glLineWidth(3);
+
+   // dimensiunea punctelor
+   glPointSize(4);
+
+   // functia void glPolygonMode (GLenum face, GLenum mode)
+   // controleaza modul de desenare al unui poligon
+   // mode : GL_POINT (numai vf. primitivei) GL_LINE (numai
+   //        muchiile) GL_FILL (poligonul plin)
+   // face : tipul primitivei geometrice dpdv. al orientarii
+   //        GL_FRONT - primitive orientate direct
+   //        GL_BACK  - primitive orientate invers
+   //        GL_FRONT_AND_BACK  - ambele tipuri
+   glPolygonMode(GL_FRONT, GL_LINE);
+}
+
+void Display(void) {
+   printf("Call Display\n");
+
+   // sterge buffer-ul indicat
+   glClear(GL_COLOR_BUFFER_BIT);
+
+   switch(prevKey) {
+   case '1':
+      Display1();
+      break;
+   case '2':
+      Display2();
+      break;
+   case '3':
+      Display3();
+      break;
+   case '4':
+      Display4();
+      break;
+   case '5':
+      Display5();
+      break;
+   case '6':
+      Display6();
+      break;
+   case '7':
+      Display7();
+      break;
+   case '8':
+      Display8();
+      break;
+   default:
+      break;
+   }
+
+   // forteaza redesenarea imaginii
+   glFlush();
+}
+
+/*
+   Parametrii w(latime) si h(inaltime) reprezinta noile
+   dimensiuni ale ferestrei
+*/
+void Reshape(int w, int h) {
+   printf("Call Reshape : latime = %d, inaltime = %d\n", w, h);
+
+   // functia void glViewport (GLint x, GLint y,
+   //                          GLsizei width, GLsizei height)
+   // defineste poarta de afisare : acea suprafata dreptunghiulara
+   // din fereastra de afisare folosita pentru vizualizare.
+   // x, y sunt coordonatele pct. din stg. jos iar 
+   // width si height sunt latimea si inaltimea in pixeli.
+   // In cazul de mai jos poarta de afisare si fereastra coincid
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+/* 
+   Parametrul key indica codul tastei iar x, y pozitia
+   cursorului de mouse
+*/
+void KeyboardFunc(unsigned char key, int x, int y) {
+   printf("Ati tastat <%c>. Mouse-ul este in pozitia %d, %d.\n",
+            key, x, y);
+   // tasta apasata va fi utilizata in Display ptr.
+   // afisarea unor imagini
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+/* 
+   Codul butonului poate fi :
+   GLUT_LEFT_BUTTON, GLUT_MIDDLE_BUTTON, GLUT_RIGHT_BUTTON
+   Parametrul state indica starea: "apasat" GLUT_DOWN sau
+   "eliberat" GLUT_UP
+   Parametrii x, y : coordonatele cursorului de mouse
+*/
+void MouseFunc(int button, int state, int x, int y) {
+   printf("Call MouseFunc : ati %s butonul %s in pozitia %d %d\n",
+      (state == GLUT_DOWN) ? "apasat" : "eliberat",
+      (button == GLUT_LEFT_BUTTON) ? 
+      "stang" : 
+      ((button == GLUT_RIGHT_BUTTON) ? "drept": "mijlociu"),
+      x, y);
+}
+
+int main(int argc, char** argv) {
+   // Initializarea bibliotecii GLUT. Argumentele argc
+   // si argv sunt argumentele din linia de comanda si nu 
+   // trebuie modificate inainte de apelul functiei 
+   // void glutInit(int *argcp, char **argv)
+   // Se recomanda ca apelul oricarei functii din biblioteca
+   // GLUT sa se faca dupa apelul acestei functii.
+   glutInit(&argc, argv);
+   
+   // Argumentele functiei
+   // void glutInitWindowSize (int latime, int latime)
+   // reprezinta latimea, respectiv inaltimea ferestrei
+   // exprimate in pixeli. Valorile predefinite sunt 300, 300.
+   glutInitWindowSize(300, 300);
+
+   // Argumentele functiei
+   // void glutInitWindowPosition (int x, int y)
+   // reprezinta coordonatele varfului din stanga sus
+   // al ferestrei, exprimate in pixeli. 
+   // Valorile predefinite sunt -1, -1.
+   glutInitWindowPosition(100, 100);
+
+   // Functia void glutInitDisplayMode (unsigned int mode)
+   // seteaza modul initial de afisare. Acesta se obtine
+   // printr-un SAU pe biti intre diverse masti de display
+   // (constante ale bibliotecii GLUT) :
+   // 1. GLUT_SINGLE : un singur buffer de imagine. Reprezinta
+   //    optiunea implicita ptr. nr. de buffere de
+   //    de imagine.
+   // 2. GLUT_DOUBLE : 2 buffere de imagine.
+   // 3. GLUT_RGB sau GLUT_RGBA : culorile vor fi afisate in
+   //    modul RGB.
+   // 4. GLUT_INDEX : modul indexat de selectare al culorii.
+   // etc. (vezi specificatia bibliotecii GLUT)
+   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+
+   // Functia int glutCreateWindow (char *name)
+   // creeaza o fereastra cu denumirea data de argumentul
+   // name si intoarce un identificator de fereastra.
+   glutCreateWindow (argv[0]);
+
+   Init();
+
+   // Functii callback : functii definite in program si 
+   // inregistrate in sistem prin intermediul unor functii
+   // GLUT. Ele sunt apelate de catre sistemul de operare
+   // in functie de evenimentul aparut
+
+   // Functia 
+   // void glutReshapeFunc (void (*Reshape)(int width, int height))
+   // inregistreaza functia callback Reshape care este apelata
+   // oridecate ori fereastra de afisare isi modifica forma.
+   glutReshapeFunc(Reshape);
+   
+   // Functia 
+   // void glutKeyboardFunc (void (*KeyboardFunc)(unsigned char,int,int))
+   // inregistreaza functia callback KeyboardFunc care este apelata
+   // la actionarea unei taste.
+   glutKeyboardFunc(KeyboardFunc);
+   
+   // Functia 
+   // void glutMouseFunc (void (*MouseFunc)(int,int,int,int))
+   // inregistreaza functia callback MouseFunc care este apelata
+   // la apasarea sau la eliberarea unui buton al mouse-ului.
+   glutMouseFunc(MouseFunc);
+
+   // Functia 
+   // void glutDisplayFunc (void (*Display)(void))
+   // inregistreaza functia callback Display care este apelata
+   // oridecate ori este necesara desenarea ferestrei: la 
+   // initializare, la modificarea dimensiunilor ferestrei
+   // sau la apelul functiei
+   // void glutPostRedisplay (void).
+   glutDisplayFunc(Display);
+   
+   // Functia void glutMainLoop() lanseaza bucla de procesare
+   // a evenimentelor GLUT. Din bucla se poate iesi doar prin
+   // inchiderea ferestrei aplicatiei. Aceasta functie trebuie
+   // apelata cel mult o singura data in program. Functiile
+   // callback trebuie inregistrate inainte de apelul acestei
+   // functii.
+   // Cand coada de evenimente este vida atunci este executata
+   // functia callback IdleFunc inregistrata prin apelul functiei
+   // void glutIdleFunc (void (*IdleFunc) (void))
+   glutMainLoop();
+
+   return 0;
+}
+
+##############################################################################
+// Tema 2
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+#include "glut.h"
+
+// dimensiunea ferestrei in pixeli
+#define dim 300
+
+unsigned char prevKey;
+
+// concoida lui Nicomede (concoida dreptei)
+// $x = a + b \cdot cos(t), y = a \cdot tg(t) + b \cdot sin(t)$. sau
+// $x = a - b \cdot cos(t), y = a \cdot tg(t) - b \cdot sin(t)$. unde
+// $t \in (-\pi / 2, \pi / 2)$
+void Display1() {
+   double xmax, ymax, xmin, ymin;
+   double a = 1, b = 2;
+   double pi = 4 * atan(1.0);
+   double ratia = 0.05;
+   double t;
+
+   // calculul valorilor maxime/minime ptr. x si y
+   // aceste valori vor fi folosite ulterior la scalare
+   xmax = a - b - 1;
+   xmin = a + b + 1;
+   ymax = ymin = 0;
+   for (t = - pi/2 + ratia; t < pi / 2; t += ratia) {
+      double x1, y1, x2, y2;
+      x1 = a + b * cos(t);
+      xmax = (xmax < x1) ? x1 : xmax;
+      xmin = (xmin > x1) ? x1 : xmin;
+
+      x2 = a - b * cos(t);
+      xmax = (xmax < x2) ? x2 : xmax;
+      xmin = (xmin > x2) ? x2 : xmin;
+
+      y1 = a * tan(t) + b * sin(t);
+      ymax = (ymax < y1) ? y1 : ymax;
+      ymin = (ymin > y1) ? y1 : ymin;
+
+      y2 = a * tan(t) - b * sin(t);
+      ymax = (ymax < y2) ? y2 : ymax;
+      ymin = (ymin > y2) ? y2 : ymin;
+   }
+
+   xmax = (fabs(xmax) > fabs(xmin)) ? fabs(xmax) : fabs(xmin);
+   ymax = (fabs(ymax) > fabs(ymin)) ? fabs(ymax) : fabs(ymin);
+
+   // afisarea punctelor propriu-zise precedata de scalare
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_LINE_STRIP); 
+   for (t = - pi/2 + ratia; t < pi / 2; t += ratia) {
+      double x1, y1, x2, y2;
+      x1 = (a + b * cos(t)) / xmax;
+      x2 = (a - b * cos(t)) / xmax;
+      y1 = (a * tan(t) + b * sin(t)) / ymax;
+      y2 = (a * tan(t) - b * sin(t)) / ymax;
+
+      glVertex2f(x1,y1);
+   }
+   glEnd();
+
+   glBegin(GL_LINE_STRIP); 
+   for (t = - pi/2 + ratia; t < pi / 2; t += ratia) {
+      double x1, y1, x2, y2;
+      x1 = (a + b * cos(t)) / xmax;
+      x2 = (a - b * cos(t)) / xmax;
+      y1 = (a * tan(t) + b * sin(t)) / ymax;
+      y2 = (a * tan(t) - b * sin(t)) / ymax;
+
+      glVertex2f(x2,y2);
+   }
+   glEnd();
+}
+
+// graficul functiei 
+// $f(x) = \bar sin(x) \bar \cdot e^{-sin(x)}, x \in \langle 0, 8 \cdot \pi \rangle$, 
+void Display2() {
+   double pi = 4 * atan(1.0);
+   double xmax = 8 * pi;
+   double ymax = exp(1.1);
+   double ratia = 0.05;
+
+   // afisarea punctelor propriu-zise precedata de scalare
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_LINE_STRIP); 
+   for (double x = 0; x < xmax; x += ratia) {
+      double x1, y1;
+      x1 = x / xmax;
+      y1 = (fabs(sin(x)) * exp(-sin(x))) / ymax;
+
+      glVertex2f(x1,y1);
+   }
+   glEnd();
+}
+
+/* Trasarea functiei (x) problema 1.2 */
+void Display3() {
+
+	double ratia = 0.5;
+	double xmax = 100;
+
+	 // afisarea punctelor propriu-zise precedata de scalare
+   glColor3f(1,0.1,0.1); // rosu
+   glBegin(GL_LINE_STRIP); 
+   for (double x = 0; x < xmax; x += ratia) {
+     double dx = abs(x - floor(x + 0.5));
+	 double y;
+	 if(x == 0) {
+		 y = 1;
+	 } else {
+		 y = dx/x;
+	 }
+	
+      glVertex2f(x/25,y);
+   }
+   glEnd();
+}
+
+/*  
+Melcul lui Pascal
+*/
+void Display4() {
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+	double a = 0.3;
+	double b = 0.2;
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+
+	for (double t = -pi; t < pi; t += ratia) {
+		double x = 2*(a*cos(t)+b)*cos(t);
+		double y = 2*(a*cos(t) + b)*sin(t);
+
+      glVertex2f(x,y);
+	}
+
+	glEnd();
+}
+
+/*
+Longchamps
+*/
+void Display5() {
+	double a = 0.2;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+	
+	double x,y;
+
+	double t_start_1=-pi/2;
+
+	do
+	{
+		y = (a*tan(t_start_1))/(4*cos(t_start_1)*cos(t_start_1)-3);
+		t_start_1 += ratia;
+	}
+	while (y>1);
+
+	t_start_1-=ratia;
+
+	glColor3f(1,0.1,0.1); // rosu
+	glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
+	glBegin(GL_TRIANGLES); 
+
+	//desenare triunghiuri din partea de sus
+	for(double t = t_start_1; t <t_start_1+12*3*ratia; t+= 3*ratia) {
+		
+		glVertex2f(-1,1);
+	
+		if ((t!=pi/6) && (t!=-pi/6))
+		{
+			double x1 = a/(4*cos(t)*cos(t)-3);
+			double y1 = (a*tan(t))/(4*cos(t)*cos(t)-3);
+
+			glVertex2f(x1,y1);
+		}
+
+		if ((t+ratia!=pi/6) && (t+ratia!=-pi/6))
+		{
+			double x2 = a/(4*cos(t+ratia)*cos(t+ratia)-3);
+			double y2 = (a*tan(t+ratia))/(4*cos(t+ratia)*cos(t+ratia)-3);
+
+			glVertex2f(x2,y2);
+		}
+	}
+
+	//desenare triunghiuri din partea de jos
+	double t_start_2=-pi/6;
+
+	do
+	{
+		x = a/(4*cos(t_start_2)*cos(t_start_2)-3);
+		t_start_2 -= ratia;
+	}
+	while (x<-1);
+
+	t_start_2+=ratia;
+
+	for(double t = t_start_2-2*ratia; t > t_start_2-12*3*ratia; t-= 3*ratia) {
+
+		glVertex2f(-1,1);
+	
+		if ((t!=pi/6) && (t!=-pi/6))
+		{
+			double x1 = a/(4*cos(t)*cos(t)-3);
+			double y1 = (a*tan(t))/(4*cos(t)*cos(t)-3);
+
+			glVertex2f(x1,y1);
+		}
+
+		if ((t+ratia!=pi/6) && (t+ratia!=-pi/6))
+		{
+			double x2 = a/(4*cos(t+ratia)*cos(t+ratia)-3);
+			double y2 = (a*tan(t+ratia))/(4*cos(t+ratia)*cos(t+ratia)-3);
+
+			glVertex2f(x2,y2);
+		}
+	}
+	glEnd();
+
+	//desenare contur
+	glColor3f(0.0,0.0,0.4); // negru
+	glBegin(GL_LINE_STRIP); 
+	
+	glVertex2f(-1,1);
+	for(double t = t_start_1 ; t <t_start_2; t+= ratia) {
+		if ((t!=pi/6) && (t!=-pi/6))
+		{
+			double x = a/(4*cos(t)*cos(t)-3);
+			double y = (a*tan(t))/(4*cos(t)*cos(t)-3);
+
+			glVertex2f(x,y);		
+		}
+		
+	}
+	glVertex2f(-1,1);
+	glEnd();	
+}
+
+/* cicloida */
+void Display6() {
+	double a = 0.1;
+	double b = 0.2;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+		for(double t = -3*pi; t < 3*pi; t+= ratia) {
+			double x = a*t-b*sin(t);
+			double y = a-b*cos(t);
+			  glVertex2f(x*1.1,y);
+		}
+	glEnd();
+	
+}
+
+/* Epicicloida */
+void Display7() {
+	double R = 0.1;
+	double r = 0.3;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+		for(double t = 0; t < 2*pi; t+= ratia) {
+			double x = (r+R)*cos(r*t/R)-r*cos(t+r*t/R);
+			double y = (r+R)*sin(r*t/R)-r*sin(t+r*t/R);
+			  glVertex2f(x,y);
+		}
+	glEnd();
+	
+}
+
+/* Hipocicloida */
+void Display8() {
+	double R = 0.1;
+	double r = 0.3;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+		for(double t = 0; t < 2*pi; t+= ratia) {
+			double x = (R-r)*cos(r*t/R)-r*cos(t-r*t/R);
+			double y = (R-r)*sin(r*t/R)-r*sin(t-r*t/R);
+			  glVertex2f(x,y);
+		}
+	 glEnd();
+	
+}
+
+/* Lemniscata lui Bernoulli */
+void Display9() {
+	double a = 0.4;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+	double r;
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+
+    for(double t = -pi/4; t < pi/4; t+= ratia) {
+		
+		 r = a*sqrt(2*cos(2*t));
+		  glVertex2f(r*cos(t),r*sin(t));
+	}
+	for(double t = -pi/4; t < pi/4; t+= ratia) {
+		
+		 r = -a*sqrt(2*cos(2*t));
+		  glVertex2f(r*cos(t),r*sin(t));
+	}
+ 	
+	  glEnd();
+	
+}
+
+/* spirala logaritmica*/
+void Display10() {
+	double a = 0.02;
+	double ratia = 0.005;
+	double pi = 4 * atan(1.0);
+	double r;
+
+	glColor3f(1,0.1,0.1); // rosu
+	glBegin(GL_LINE_STRIP); 
+
+    for(double t = 0; t < 1000; t+= ratia) {
+		 r = a*exp(1+t);
+		 glVertex2f(r*cos(t),r*sin(t));
+	}
+	
+	  glEnd();
+	
+}
+
+void Init(void) {
+
+   glClearColor(1.0,1.0,1.0,1.0);
+
+   glLineWidth(1);
+
+//   glPointSize(4);
+
+   glPolygonMode(GL_FRONT, GL_FILL);
+}
+
+void Display(void) {
+   glClear(GL_COLOR_BUFFER_BIT);
+
+   switch(prevKey) {
+   case '1':
+      Display1();
+      break;
+   case '2':
+      Display2();
+      break;
+	     case '3':
+      Display3();
+      break;
+	     case '4':
+      Display4();
+      break;
+	     case '5':
+      Display5();
+      break;
+	      case '6':
+      Display6();
+      break;
+	       case '7':
+      Display7();
+      break;
+	  case '8':
+      Display8();
+      break;
+	   case '9':
+      Display9();
+      break;
+	  case '0':
+      Display10();
+      break;
+   default:
+      break;
+   }
+
+   glFlush();
+}
+
+void Reshape(int w, int h) {
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+void KeyboardFunc(unsigned char key, int x, int y) {
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y) {
+}
+
+int main(int argc, char** argv) {
+
+   glutInit(&argc, argv);
+   
+   glutInitWindowSize(dim, dim);
+
+   glutInitWindowPosition(100, 100);
+
+   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+
+   glutCreateWindow (argv[0]);
+
+   Init();
+
+   glutReshapeFunc(Reshape);
+   
+   glutKeyboardFunc(KeyboardFunc);
+   
+   glutMouseFunc(MouseFunc);
+
+   glutDisplayFunc(Display);
+   
+   glutMainLoop();
+
+   return 0;
+}
+
+###################################################################################
+
+//Tema 3
+
+class GrilaCarteziana {
+private:
+	int m; //numarul de linii
+    int n; //numarul de coloane
+
+	/* originea sistemului de coordonate a grilei in coordonate openGL */
+	int ogx; 
+	int ogy; 
+
+	/* distanta intre coloane, respectiv linii */
+	double dc;
+	double dl;
+
+	/* distanta dintre grila si marginea ferestrei */
+	double eps; 
+
+public: 
+	/* constructor (* valoarea lui epsilon, precum si coordonatele originii
+	   se modifica in aceasta functie *) */
+	GrilaCarteziana(int l, int c) {
+		m = l;
+		n = c;
+		ogx = -1;
+		ogy = -1;
+		eps = 0.1;
+	}
+
+public:
+	/* getterii pentru membrii m,n,dc si dl */
+	int getM() {
+
+		return m;
+	}
+
+	int getN() {
+		 return n;
+	}
+
+	double getDc()	{
+		return dc;
+	}
+
+	double getDl()	{
+		return dl;
+	}
+
+	/* functie care deseneaza grila */
+	void DeseneazaGrila() {
+		
+		/* calculam dc si dl */
+		dc = (2.0 - 2*eps)/(m-1);
+		dl = (2.0 - 2*eps)/(n-1);
+		
+		/* stabilim culoarea liniilor grilei */
+		glColor3f(0,0,0); //negru
+
+		/* pozitia de la care se incepe desenarea liniilor si coloanelor */
+		double poz=-1+eps;
+
+		/* desenam coloanele */
+		for (int i=0;i<n;i++)
+		{
+			glBegin(GL_LINES); 
+					  glVertex2f(poz+i*dc,1-eps);
+					  glVertex2f(poz+i*dc,-1+eps);		
+			glEnd();
+		}
+
+		/* desenam liniile */ 
+		for (int i=0;i<m;i++)
+		{
+			glBegin(GL_LINES); 
+					  glVertex2f(1-eps,poz+i*dl);
+					  glVertex2f(-1+eps,poz+i*dl);		
+			glEnd();
+		}
+	}
+
+	/* functie ce transforma coordonata x a grilei in coordonata openGL */
+	double transformaX(int x) {
+		
+		return ogx + eps + x*dc;
+	}
+	
+	/* functie ce transforma coordonata y a grilei in coordonata openGL */
+	double transformaY(int y) {
+		return ogy + eps + y*dl;
+	}
+
+	/* deseneaza segmentul de dreapta martor */
+	void DeseneazaMartor(int x1, int y1, int x2, int y2) {
+		
+		/* transformam coordonatele in coordonate openGL */
+		double x1gl = transformaX(x1);
+		double x2gl = transformaX(x2);
+		double y1gl = transformaY(y1);
+		double y2gl = transformaY(y2);
+
+		/* stabilim culoarea segmentului */
+		glColor3f(1,0.1,0.1); // rosu
+		
+		/* stabilim grosimea segmentului de dreapta */
+		glLineWidth(2);
+
+		/* desenam segmentul */
+		glBegin(GL_LINES); 
+					  glVertex2f(x1gl,y1gl);
+					  glVertex2f(x2gl,y2gl);		
+		glEnd();
+
+		/* revenim la grosimea initiala a liniilor */
+		glLineWidth(1);
+	}
+
+	/* functie care deseneaza un pixel pe grila */
+	void writePixel(int x, int y) {
+
+		/* stabilim culoarea pixelului */
+		glColor3f(0.2,0.2,0.2); // gri inchis
+		
+		/* desenam cercul corespunzator pixelului, 
+		   de raza epsilon/3 si cu centrul (x,y)*/
+		glBegin(GL_POLYGON);
+		for(int i =0; i <= 360; i++){
+			double pi = 4 * atan(1.0);
+			double angle = 2 * pi * i / 360;
+			double xc = cos(angle)*eps/3 + transformaX(x);
+			double yc = sin(angle)*eps/3 + transformaY(y);
+			glVertex2d(xc,yc);
+		}
+		glEnd(); ;
+	}
+
+	/* functie pentru desenarea ingrosata a liniilor, care foloseste
+	   tehnica duplicarii pe coloana.
+	   Pentru grosime = 0 se deseneaza grosimea normala, iar pentru
+	   grosime > 0 se deseneaza simetric un numar de pixeli egal cu grosimea,
+	   deasupra si sub pixel. */
+	void deseneazaPixelIngrosat(int x, int y, int grosime) {
+		
+		/* desenam pixelul corespunzator coordonatei (x,y) */
+		writePixel(x,y);
+		
+		int i = 1;
+		while (i <= grosime) {
+
+			/* desenare deasupra */
+			if(y+i < m) {
+				writePixel(x,y+i);
+			}
+			/* desenare dedesubt */
+			if(y-i >= 0) {
+				writePixel(x,y-i);
+			}
+
+			i++;
+		}
+	}
+	
+};
+
+/* Declaram un obiect de tip GrilaCarteziana ca variabila globala */
+GrilaCarteziana grila(15,15);
+
+/* functie care deseneaza pixelii unui segment de dreapta dat de grosime stabilita,
+   folosind algoritmul 3 prezentat in suportul de curs. */
+void AfisareSegmentDreapta3(int x1, int y1, int x2, int y2, int grosime)
+	{
+		/* pentru valoare negativa a grosimii nu se deseneaza  nimic */
+		if (grosime < 0) {
+			return;
+		}
+
+		/* ordonam crescator dupa coordonata x capetele segmentelor. 
+		   (segmentul se va desena de la stanga la dreapta)*/
+		if(x1 > x2)  {
+			int aux=y1;
+				y1=y2;
+				y2=aux;
+				aux = x1;
+				x1 = x2;
+				x2 = aux;
+		}
+		
+		/* lungimea proiectii segmentului de dreapta pe axa Ox, respectiv Oy */
+		int dx=x2-x1;
+		int dy=y2-y1;
+		
+		/* pornim desenarea segmentului */
+		int x=x1;
+		int y=y1;
+
+		grila.deseneazaPixelIngrosat(x,y,grosime);
+
+		/* consideram separat cazul segmentelor verticale,
+		   deoarece calcul pantei presupune impartirea la 0.*/
+		if (x1==x2)
+		{
+			if (y1>y2)
+			{
+				int aux=y1;
+				y1=y2;
+				y2=aux;
+			}
+
+			for (int j=y1;j<=y2;j++)
+			{
+				grila.deseneazaPixelIngrosat(x1,j,grosime);
+			}
+
+			return;
+		}
+
+		/* calculam panta segmentului de dreapta */
+		double panta=(double)((y1-y2))/(double)((x1-x2));
+	
+		/* cazul I - |panta| <= 1 */
+		if (abs(panta)<=1)
+		{   
+			/* cazul I.1 - dreapta ascendenta */
+			if(panta > 0) {
+
+				int d=2*dy-dx;
+				int dE=2*dy;
+				int dNE=2*(dy-dx);
+			
+				while (x<x2)
+				{
+					/* se alege pixelul de sub dreapta */
+					if (d<=0)
+					{
+						d+=dE;
+						x++;
+					}
+
+					/* se alege pixelul de deasupra dreptei */
+					else
+					{
+						d+=dNE;
+						x++;
+						y++;
+					}
+					grila.deseneazaPixelIngrosat(x,y,grosime);
+				}
+			}
+			
+			/* cazul I.2 - dreapta descendenta */
+			else {
+				int d=2*dy+dx;
+				int dE=2*dy;
+				int dSE=2*(dy+dx);
+
+				while (x<x2)
+				{	
+					/* se alege pixelul de deasupra dreptei */
+					if (d>0)
+					{
+						d+=dE;
+						x++;
+					}
+					/* se alege pixelul de sub dreapta */
+					else
+					{
+						d+=dSE;
+						x++;
+						y--;					
+					}
+					
+					grila.deseneazaPixelIngrosat(x,y,grosime);
+				}
+			
+			}
+		}
+		
+		/* cazul II - |panta| > 1 */
+		else 
+		{
+			
+			/* cazul II.1 - dreapta ascendenta */
+			if (panta>0)
+			{
+				int d=dy-2*dx;
+				int dN=-2*dx;
+				int dNE=2*(dy-dx);
+
+				while (y<y2)
+				{
+					
+					/* se alege pixelul de deasupra dreptei */
+					if (d>0)
+					{
+						d+=dN;
+						y++;
+					}
+					/* se alege pixelul de sub dreapta */
+					else
+					{
+						d+=dNE;
+						x++;
+						y++;
+					}
+
+					grila.deseneazaPixelIngrosat(x,y,grosime);
+				}
+			}
+			
+			/* cazul II.2 - dreapta descendenta */
+			else
+			{
+				int d=dy+2*dx;
+				int dS=2*dx;
+				int dSE=2*(dy+dx);
+
+				while (y>y2)
+				{
+					/* se alege pixelul de sub dreapta */
+					if (d<=0)
+					{
+						d+=dS;
+						y--;
+					}
+					
+					/* se alege pixelul de deasupra dreptei */
+					else
+					{
+						d+=dSE;
+						x++;
+						y--;
+					}
+					grila.deseneazaPixelIngrosat(x,y,grosime);
+				}
+			}
+		}
+	}
+
+void Init(void) {
+	
+		   glClearColor(1.0,1.0,1.0,1.0);
+
+		   glLineWidth(1);
+
+		   glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+}
+	
+
+
+void Reshape(int w, int h) {
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+
+void KeyboardFunc(unsigned char key, int x, int y) {
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y) {
+}
+
+void Display() {
+   glClear(GL_COLOR_BUFFER_BIT);
+	
+
+   grila.DeseneazaGrila();
+   switch(prevKey)
+   {
+   case '1': //|panta|<1, panta > 0
+
+		grila.DeseneazaMartor(0,0,14,7);
+		AfisareSegmentDreapta3(0,0,14,7,0);
+	   break;
+   case '2'://|panta|<1, panta < 0
+	
+		grila.DeseneazaMartor(0,14,14,9);
+		AfisareSegmentDreapta3(0,14,14,9,1);
+	   break;
+   case '3'://|panta|>1, panta > 0
+	  
+		grila.DeseneazaMartor(0,0,5,14);
+		AfisareSegmentDreapta3(0,0,5,14,0);
+	   break;
+   case '4'://|panta|>1, panta < 0
+	   
+		grila.DeseneazaMartor(0,14,3,1);
+		AfisareSegmentDreapta3(0,14,3,1,0);
+	   break;
+   case '5': //x1 = x2 -> segment vertical
+	  
+		grila.DeseneazaMartor(3,0,3,14);
+		AfisareSegmentDreapta3(3,0,3,14,0);
+	   break;
+   case '6': //y1 = y2 -> segment orizontal
+	   
+		grila.DeseneazaMartor(0,5,14,5);
+		AfisareSegmentDreapta3(0,5,14,5,0);
+	   break;
+   default:
+	   break;
+   }
+
+ glFlush();
+}
+
+###################################################################
+
+//Tema 4
+
+//tipurile de date folosite
+typedef struct S1{int x,y;} VARF;
+
+typedef struct S2{VARF vi,vf;} MUCHIE;
+
+typedef list<MUCHIE> POLIGON;
+
+typedef struct S3{int ymax; double xmin; double ratia;} INTERSECTIE;
+
+typedef list<INTERSECTIE> INTERSECTII;
+
+int dom_scan=100;
+
+// dimensiunea ferestrei in pixeli
+#define dim 300
+
+unsigned char prevKey;
+
+class GrilaCarteziana {
+
+private:
+	int m;	//nr de linii
+    int n;	//nr de coloane
+
+	/* originea sistemului de coordonate a grilei in coordonate openGL */
+	int ogx; 
+	int ogy; 
+
+	/* distanta intre coloane, respectiv linii */
+	double dc;
+	double dl;
+
+	/* distanta dintre grila si marginea ferestrei */
+	double eps; 
+
+public: 
+	/* constructor (* valoarea lui epsilon, precum si coordonatele originii
+	   se modifica in aceasta functie *) */
+	GrilaCarteziana(int l, int c) {
+		m = l;
+		n = c;
+		ogx = -1;
+		ogy = -1;
+		eps = 2.0/c;
+	}
+
+public:
+	/* getterii pentru membrii m,n,dc si dl */
+	int getM() {
+
+		return m;
+	}
+
+	int getN() {
+		 return n;
+	}
+
+	double getDc()
+	{
+		return dc;
+	}
+
+	double getDl()
+	{
+		return dl;
+	}
+
+
+	/* functie care deseneaza grila */
+	void DeseneazaGrila() {
+		
+		/* calculam dc si dl */
+		dc = (2.0 - 2*eps)/(m-1);
+		dl = (2.0 - 2*eps)/(n-1);
+		
+		/* stabilim culoarea liniilor grilei */
+		glColor3f(0,0,0); //negru
+
+		/*stabilim grosimea liniilor grilei*/
+		glLineWidth(1);
+
+		/* pozitia de la care se incepe desenarea liniilor si coloanelor */
+		double poz=-1+eps;
+
+		/* desenam coloanele */
+		for (int i=0;i<n;i++)
+		{
+			glBegin(GL_LINES); 
+					  glVertex2f(poz+i*dc,1-eps);
+					  glVertex2f(poz+i*dc,-1+eps);		
+			glEnd();
+		}
+
+		/* desenam liniile */ 
+		for (int i=0;i<m;i++)
+		{
+			glBegin(GL_LINES); 
+					  glVertex2f(1-eps,poz+i*dl);
+					  glVertex2f(-1+eps,poz+i*dl);		
+			glEnd();
+		}
+	}
+
+	/* functie ce transforma coordonata x a grilei in coordonata openGL */
+	double transformaX(int x) {
+		
+		return ogx + eps + x*dc;
+	}
+	
+	/* functie ce transforma coordonata y a grilei in coordonata openGL */
+	double transformaY(int y) {
+		return ogy + eps + y*dl;
+	}
+
+	/*functie ce transforma valoarea razei astfel in functie de nr de linii ale grilei*/
+	double transformaR(int r) {
+		return (2.0-2*eps)/(m-1)*r;
+	}
+
+	/*deseneaza martorul cercului*/
+	void DeseneazaMartorCerc(int x, int y, int r) {
+
+		/* stabilim culoarea */
+		glColor3f(1,0.1,0.1); // rosu
+		
+		/* stabilim grosimea */
+		glLineWidth(2);
+
+		/*valoare lui pi*/
+		double pi = 4 * atan(1.0);
+
+		/*desenam cercul*/
+		glBegin(GL_LINE_STRIP);
+		    for(int i=360; i >=0; i--)
+			{
+				double angle = 2* pi * i / 360;
+				double xc = cos(angle)*transformaR(r) + transformaX(x);
+				double yc = sin(angle)*transformaR(r) + transformaY(y);
+
+				/*daca punctul se afla in spatiul grilei este desenat cu rosu...*/
+				if((xc >= -1+eps) && (xc <= 1-eps) && (yc >= -1+eps) && (yc <= 1-eps))
+				{
+					glColor3f(1,0.1,0.1);
+				}
+				/*altfel se omite prin desenarea lui cu alb*/
+				else
+				{
+					glColor3f(1,1,1);
+				}
+
+				glVertex2d(xc,yc);
+			}
+
+		glEnd(); 
+	}
+
+	/*deseneaza martorul elipsei*/
+	void DeseneazaMartorElipsa(int x, int y, int a,int b) {
+
+		/* stabilim culoarea */
+		glColor3f(1,0.1,0.1); // rosu
+		
+		/* stabilim grosimea */
+		glLineWidth(2);
+
+		/*valoare lui pi*/
+		double pi = 4 * atan(1.0);
+
+		/*desenam elipsa*/
+		glBegin(GL_LINE_STRIP);
+		    for(int i=360; i >=0; i--)
+			{
+				double angle = 2* pi * i / 360;
+				double xc = cos(angle)*transformaR(a) + transformaX(x);
+				double yc = sin(angle)*transformaR(b) + transformaY(y);
+
+				/*daca punctul se afla in spatiul grilei este desenat cu rosu...*/
+				if((xc >= -1+eps) && (xc <= 1-eps) && (yc >= -1+eps) && (yc <= 1-eps))
+				{
+					glColor3f(1,0.1,0.1); //rosu
+				}
+				/*altfel se omite prin desenarea lui cu alb*/
+				else
+				{
+					glColor3f(1,1,1); //alb
+				}
+
+				glVertex2d(xc,yc);
+			}
+
+		glEnd(); 
+	}
+	
+	/*	deseneaza martor poligon si returneaza un obiect de tip POLIGON ce contine lista de muchii pentru calculele ulterioare.
+		datele se citesc dintr-un fisier*/
+	POLIGON DeseneazaMartorPoligon(string filename)
+	{
+		string line;
+		ifstream myfile (filename);
+		int nr,x,y,x1,y1;
+
+		//daca fisierul este deschis ... */
+		  if (myfile.is_open())
+			{
+				POLIGON P=POLIGON();
+
+				/* stabilim culoarea */
+				glColor3f(1,0.1,0.1); // rosu
+		
+				/* stabilim grosimea */
+				glLineWidth(2);
+
+				/*citim numarul de varfuri*/
+				myfile>>nr;
+
+				VARF v1,v2;
+				MUCHIE muchie;
+
+				/*desenam poligonul*/
+				glBegin(GL_LINE_STRIP);
+
+					/*citim coordonatele primului varf*/
+					myfile>>x1>>y1;
+					
+					/*verificam validitatea lor (x in [0,m) , y in [0,n) )*/
+					if ((x1>=0) && (x1<m) && (y1>=0) && (y1<n))
+						{
+							glVertex2d(transformaX(x1),transformaY(y1));
+							v1.x=x1;
+							v1.y=y1;
+						}
+					else
+						return POLIGON();
+
+					/*citim si restul varfurilor*/
+					for (int i=1;i<nr;i++)
+					{
+						/*citim coordonatele varfului*/
+						myfile>>x>>y;
+
+						/*verificam validitatea lor (x in [0,m) , y in [0,n) )*/
+						if ((x>=0) && (x<m) && (y>=0) && (y<n))
+						{
+							glVertex2d(transformaX(x),transformaY(y));
+							v2.x=x;
+							v2.y=y;
+						}
+						else
+							return POLIGON();
+
+						/*adaugam muchia (V_(i-1),V_i) in lista*/
+						muchie.vi=v1;
+						muchie.vf=v2;
+						P.push_back(muchie);
+
+						v1.x=v2.x;
+						v1.y=v2.y;
+					}
+
+					glVertex2d(transformaX(x1),transformaY(y1));
+
+					/*adaugam muchia (V_n,V_1) in lista*/
+					muchie.vi=v1;
+					muchie.vf=P.begin()->vi;
+					P.push_back(muchie);
+
+				glEnd();
+
+				myfile.close();
+
+				return P;
+			}
+			else 
+				cout << "Unable to open file"; 
+			
+		  /*returnam POLIGON gol daca apare vreo eroare*/
+			return POLIGON();
+	}
+
+	/* functie care deseneaza un pixel pe grila */
+	void writePixel(int x, int y) {
+
+		/* stabilim culoarea pixelului */
+		glColor3f(0.2,0.2,0.2); // gri inchis
+		
+		/* desenam cercul corespunzator pixelului, 
+		   de raza epsilon/3 si cu centrul (x,y)*/
+		glBegin(GL_POLYGON);
+		for(int i =0; i <= 360; i++){
+			double pi = 4 * atan(1.0);
+			double angle = 2 * pi * i / 360;
+			double xc = cos(angle)*eps/3 + transformaX(x);
+			double yc = sin(angle)*eps/3 + transformaY(y);
+			glVertex2d(xc,yc);
+		}
+		glEnd(); ;
+	}
+
+	/* functie pentru desenarea ingrosata a liniilor, care foloseste
+	   tehnica duplicarii pe linie.
+	   Pentru grosime = 0 se deseneaza grosimea normala, iar pentru
+	   grosime > 0 se deseneaza simetric un numar de pixeli egal cu grosimea,
+	   deasupra si sub pixel. */
+	void deseneazaPixelIngrosat(int x, int y, int grosime) {
+		
+		/* desenam pixelul corespunzator coordonatei (x,y) */
+		writePixel(x,y);
+		
+		int i = 1;
+		while (i <= grosime) {
+
+			/* desenare deasupra */
+			if(x+i < n) {
+				writePixel(x+i,y);
+			}
+			/* desenare dedesubt */
+			if(x-i >= 0) {
+				writePixel(x-i,y);
+			}
+
+			i++;
+		}
+	}
+
+};
+
+
+/*functie care deseneaza pixelii de pe un cerc aflati in primul octant de grosime stabilita,
+	folosind algoritmul AfisareCerc4 prezentat in suportul de curs.*/
+void AfisareCerc4(int R,int grosime,GrilaCarteziana grila) {
+
+	/*pentru primul octant pornim din punctul (0,R)*/
+	int x = R;
+	int y = 0;
+
+	int d = 5 - 4*R;
+	int dN = 1, dNV = -2*R+2;
+
+	grila.deseneazaPixelIngrosat(x,y,grosime);
+
+	/*cat timp ne aflam in primul octant*/
+	while (x > y)
+	{
+		/*se alege pixelul de deasupra arcului de cerc*/
+		if (d <= 0)
+		{
+			d += dN;
+			dN += 2;
+			dNV += 4;
+			
+		} 
+		/*se alege pixelul de sub arcul de cerc*/
+		else 
+		{
+			d += dNV;
+			dN += 2;
+			dNV += 2;
+			x--;
+		}
+
+		y++;
+
+		grila.deseneazaPixelIngrosat(x,y,grosime);
+	}
+
+}
+
+/*functie care deseneaza pixelii din interiorul cadranului 3 al unei elipse*/
+void DeseneazaPixeliCadranul3(int xi,int yi,int x0,int y0,GrilaCarteziana grila)
+{
+	for (int x=0;x>=xi;x--)
+	{
+		grila.deseneazaPixelIngrosat(x+x0,yi+y0,0);
+	}
+}
+
+/*functie care coloreaza cadranul 3 al unei elipse folosind o varianta modificata a algoritmului 
+UmplereElipsa prezentat in suportul de curs*/
+void UmplereElipsa(int x0,int y0,int a,int b,GrilaCarteziana grila)
+{
+	/*pornim din punctul (0,-b)*/
+	int xi=0;
+	int x=0;
+	int y=-b;
+
+	double fxpyp=0.0;
+	double deltaV,deltaNV,deltaN;
+
+	grila.deseneazaPixelIngrosat(x+x0,y+y0,0);
+
+	//regiunea 1
+	while (a*a*(-y-0.5)>b*b*(-x+1))
+	{
+		deltaV=b*b*(-2*x+1);
+		deltaNV=b*b*(-2*x+1)+a*a*(2*y+1);
+
+		if (fxpyp+deltaV<=0.0)
+		{
+			//V este in interior
+			fxpyp+=deltaV;
+			x--;
+		}
+		else
+			if (fxpyp+deltaNV<=0.0)
+			{
+				//NV este in interior
+				fxpyp+=deltaNV;
+				DeseneazaPixeliCadranul3(x,y,x0,y0,grila);
+				x--;
+				y++;			
+			}
+	}
+
+	DeseneazaPixeliCadranul3(x,y,x0,y0,grila);
+
+	//regiunea 2
+	while (y<0)
+	{
+		deltaN=a*a*(2*y+1);
+		deltaNV=b*b*(-2*x+1)+a*a*(2*y+1);
+
+		if (fxpyp+deltaNV<=0.0)
+			{
+				//NV este in interior
+				fxpyp+=deltaNV;
+				x--;
+				y++;
+			}
+		else
+			{
+				//N este in interior
+				fxpyp+=deltaN;
+				y++;
+			}
+		
+			DeseneazaPixeliCadranul3(x,y,x0,y0,grila);
+	}
+}
+
+/*functie care initializeaza o tabela de liste de puncte de intersectie ale muchiilor neorizontale ale poligonului cu fiecare dreapta de scanare */
+void initializareET(POLIGON p,INTERSECTII et[])
+{
+	int xm,ym,xM,yM;
+	bool change;
+
+	for (int i=0;i<dom_scan;i++)
+	{
+		et[i]=INTERSECTII();
+	}
+
+	/*pentru fiecare muchie din poligon ...*/
+	for (list<MUCHIE>::iterator m=p.begin(); m!=p.end();m++)
+	{
+		/*care nu este orizontala*/
+		if (m->vi.y!=m->vf.y)
+		{
+			ym=min(m->vi.y,m->vf.y);
+			yM=max(m->vi.y,m->vf.y);
+			xm=(ym==m->vi.y)?m->vi.x:m->vf.x;
+			xM=(yM==m->vi.y)?m->vi.x:m->vf.x;
+
+			INTERSECTIE a;
+			a.ymax=yM;
+			a.xmin=xm;
+			a.ratia=(double)(xm-xM)/(ym-yM);
+			
+			et[ym].push_back(a);
+		}
+	}
+
+	/*sortarea in ordine crescatoare conform cu xm 
+	a intersectiilor dreptei de scanare cu muchiile poligonului */
+	for (int i=0;i<dom_scan;i++)
+	{
+		do
+		{
+			change=false;
+			if (et[i].size()==0)
+				break;
+
+			for (list<INTERSECTIE>::iterator j=et[i].begin(); j!=et[i].end();)
+			{
+				INTERSECTIE current=*j;
+
+				j++;
+
+				if (j==et[i].end())
+					break;
+
+				INTERSECTIE next=*j;
+
+				/*interschimbare*/
+				if (current.xmin > next.xmin)
+				{
+					*j=current;
+					j--;
+					*j=next;
+					j++;
+				}	
+			}
+		} while (change);
+	}	
+}
+
+/*functie care calculeaza pentru fiecare dreapta de scanare capetele segmentelor de scanare maximale*/
+void calculssm(POLIGON p,INTERSECTII et[],INTERSECTII ssm[])
+{
+	INTERSECTII aet;
+	int y,k;
+
+	for (int i=0;i<dom_scan;i++)
+	{
+		ssm[i]=INTERSECTII();
+	}
+
+	/*lui y i se atribuie o valoare din afara domeniului de scanare DOM_SCAN*/
+	y=-1;
+
+	/*se determina cel mai mic y pentru care dreapta de scanare corespunzatoare are puncte de intersectie cu muchiile poligonului*/
+	for (int i=0;i<dom_scan;i++)
+	{
+		if (!et[i].empty())
+		{
+			y=i;
+			break;
+		}
+	}
+
+	if ((y<0) || (y>=dom_scan))
+		return;
+
+	aet=INTERSECTII();
+	do
+	{
+
+		aet.insert(aet.end(),et[y].begin(),et[y].end());
+
+		for (list<INTERSECTIE>::iterator m=aet.begin(); m!=aet.end();)
+		{
+			/*eliminare varfurilor cu ymax=y*/
+			if (m->ymax==y)
+			{
+				m=aet.erase(m);
+			}
+			else
+				m++;
+		}
+		
+		k=aet.size();
+		
+		/*sortarea crescatoare a aet conform cheii xmin*/
+		while (k>=2)
+		{
+			int i=1;
+
+			for (list<INTERSECTIE>::iterator m=aet.begin(); i<k;)
+			{
+				INTERSECTIE current=*m;
+				m++;
+
+				if (m==aet.end())
+					break;
+				
+				INTERSECTIE next=*m;
+				/*interschimbare*/
+				if (current.xmin > next.xmin)
+				{
+					*m=current;
+					m--;
+					*m=next;
+					m++;
+				}
+				
+				i++;
+			}
+
+			k--;
+		}
+
+		ssm[y]=aet;
+		y++;
+
+		/*reactualizarea punctelor de intersectie pentru noua dreapta de scanare*/
+		for (list<INTERSECTIE>::iterator m=aet.begin(); m!=aet.end();m++)
+		{
+			if (m->ratia!=0)
+			{
+				m->xmin += m->ratia;
+			}
+		}
+		
+	} while ((!aet.empty()) || (!et[y].empty()));
+}
+
+/*functie care coloreaza pixelii interiori unui poligon*/
+void coloreaza(INTERSECTII ssm[],GrilaCarteziana grila)
+{
+	int x1,x2;
+
+	//pentru fiecare dreapta de scanare
+	for (int i=0;i<dom_scan;i++)
+	{
+		//parcurgem lista punctelor de intersectie cu muchiile poligonului
+		for (list<INTERSECTIE>::iterator p=ssm[i].begin();p!=ssm[i].end();)
+		{
+			//elementele de pe pozitii impare, 2k+1, se aproximeaza prin lipsa
+			x1=floor(p->xmin);
+
+			if (x1<p->xmin)
+				x1++;
+			
+			p++;
+			double val=p->xmin;
+
+			//elementele de pe pozitii pare, 2k, se aproximeaza prin adaos
+			x2=ceil(p->xmin);
+			
+			/*daca segmentul este de fapt un varf il afisam*/
+			if (x1==x2)
+			{
+				grila.writePixel(x1,i);
+			}
+			
+			/*daca punctul de intersectie este inafara poligonului il decrementam cu 1*/
+			if (x2>p->xmin)
+				x2--;
+			
+			/*daca punctul de intersectie este ultimul din lista ...*/
+			if ((++p)==ssm[i].end())
+			{
+				/*verificam daca se afla pe muchia poligonului. Daca DA acesta nu va fi colorat.*/
+				if (x2==val)
+				{
+					x2--;
+				}
+			}
+
+			/*coloram pixelii*/
+			for (int x=x1;x<=x2;x++)
+					grila.writePixel(x,i);
+		}
+	}
+}
+
+/* functie care implementeaza algoritmul de colorare a unui poligon conform algoritmului din curs*/
+void UmplerePoligon(POLIGON P, GrilaCarteziana grila)
+{
+	INTERSECTII et[100];
+	INTERSECTII ssm[100];
+
+	initializareET(P,et);
+	calculssm(P,et,ssm);
+
+	coloreaza(ssm,grila);
+}
+
+void KeyboardFunc(unsigned char key, int x, int y) {
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y) {
+}
+
+void Display() {
+   glClear(GL_COLOR_BUFFER_BIT);
+	
+   GrilaCarteziana grila1(16,16);
+   GrilaCarteziana grila2(27,27);
+   GrilaCarteziana grila3(15,15);
+   GrilaCarteziana grila4(17,17);
+   POLIGON P,Q;
+
+   switch(prevKey)
+   {
+	case '0': //cercul din tema
+		grila1.DeseneazaGrila();
+		grila1.DeseneazaMartorCerc(0,0,13);
+		AfisareCerc4(13,1,grila1);
+		break;
+	case '1': //cerc 
+		grila1.DeseneazaGrila();
+		grila1.DeseneazaMartorCerc(0,0,10);
+		AfisareCerc4(10,1,grila1);
+		break;
+   case '2'://elipsa
+		grila2.DeseneazaGrila();
+		grila2.DeseneazaMartorElipsa(13,7,13,7);
+		UmplereElipsa(13,7,13,7,grila2);
+	    break;
+   case '3'://poligonul din tema
+		grila3.DeseneazaGrila();
+		P=grila3.DeseneazaMartorPoligon("poligon2.txt");
+
+		if (!P.empty())
+			UmplerePoligon(P,grila3);
+		else
+			printf("Eroare la citirea poligonului.");
+
+	    break;
+	case '4'://poligon
+		grila4.DeseneazaGrila();
+		Q=grila4.DeseneazaMartorPoligon("poligon.txt");
+
+		if (!Q.empty())
+			UmplerePoligon(Q,grila4);
+		else
+			printf("Eroare la citirea poligonului.");
+
+	    break;
+   default:
+	   break;
+   }
+
+ glFlush();
+}
+
+void Init(void) {
+
+		   glClearColor(1.0,1.0,1.0,1.0);
+		   glLineWidth(1);
+		   glPolygonMode(GL_FRONT, GL_FILL);
+		   glPolygonMode(GL_BACK, GL_LINE);
+}
+
+void Reshape(int w, int h) {
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+################################################################
+
+//Tema 5
+
+################################################################
+
+//Tema 6
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <windows.h>
+
+#include "glut.h"
+
+// dimensiunea ferestrei in pixeli
+#define dim 300
+double PI = 4 * atan(1.0);
+unsigned char prevKey;
+
+int angle = 0;
+
+
+
+void DisplayAxe() {
+  int X, Y, Z;
+  X = Y = 200;
+  Z = 200;
+
+  glLineWidth(2);
+
+  // axa Ox - verde
+  glColor3f(0, 1, 0);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(X,0,0);
+  glEnd();
+
+  // axa Oy - albastru
+  glColor3f(0, 0, 1);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(0,Y,0);
+  glEnd();
+
+  // axa Oz - rosu
+  glColor3f(1, 0, 0);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(0,0,Z);
+  glEnd();
+
+  glLineWidth(1);
+}
+
+
+void DisplayTriangle(double x1,double y1,double z1,double x2,double y2,double z2,double x3,double y3,double z3)
+{
+	printf("initial: x1=%f y1=%f z1=%f \n x2=%f y2=%f z2=%f \n x3=%f y3=%f z3=%f \n\n",x1,y1,z1,x2,y2,z2,x3,y3,z3);
+
+	  glColor3f(0, 1, 0);
+	  glBegin(GL_TRIANGLES); 
+		glVertex3f(x1,y1,z1);
+		glVertex3f(x2,y2,z2);
+		glVertex3f(x3,y3,z3);
+	  glEnd();
+
+	  //Translatam triunghiul cu P1 in origine
+	
+	  //coordonatele lui P2
+	  x2 = x2 - x1;
+	  y2 = y2 - y1;
+	  z2 = z2 - z1;
+
+	  //coordonatele lui P3
+	  x3 = x3 - x1;
+	  y3 = y3 - y1;
+	  z3 = z3 - z1;
+
+	  //coordonatele lui P1;
+	  x1 = y1 = z1 = 0;
+
+
+	 
+
+	  //Aducem segmentul P1P2 pe axa Oz
+
+	  //Rotatie in jurul lui Oy cu Teta
+	  double TetaY = atan(-x2 / z2);
+
+	   double aux;
+	  aux = cos(TetaY)*x2 + sin(TetaY)*z2;
+	  z2 = -sin(TetaY)*x2 + cos(TetaY)*z2;
+	  x2 = aux;
+	  //x2 = 0;
+	 
+	  aux = cos(TetaY)*x3 + sin(TetaY)*z3; //x3
+	  z3 = -sin(TetaY)*x3 + cos(TetaY)*z3; 
+	  x3 = aux;
+
+	   printf("tran Oy:teta=%f \nx1=%f y1=%f z1=%f \n x2=%f y2=%f z2=%f \n x3=%f y3=%f z3=%f \n\n",TetaY, x1,y1,z1,x2,y2,z2,x3,y3,z3);
+
+
+	  //Rotatie in jurul lui Ox cu TetaX
+	  double TetaX = atan(y2 / z2);
+	 
+	  aux = cos(TetaX)*y2 - sin(TetaX)*z2; //y2
+	  z2 = sin(TetaX)*y2 + cos(TetaX)*z2;
+	  y2 = aux;
+
+	  aux = cos(TetaX)*y3 - sin(TetaX)*z3; //y3
+	  z3 =  sin(TetaX)*y3 + cos(TetaX)*z3;
+	  y3 = aux;
+
+
+	   printf("tran Ox:teta=%f \nx1=%f y1=%f z1=%f \n x2=%f y2=%f z2=%f \n x3=%f y3=%f z3=%f \n\n",TetaX, x1,y1,z1,x2,y2,z2,x3,y3,z3);
+
+	 
+
+	   
+
+	  //Aducem punctul P3 in planul Oyz
+
+	  //Rotatie in jurul lui Oz cu TetaZ
+	  double TetaZ = atan(x3 / y3);
+
+	  //calc x3,y3
+	  aux = cos(TetaZ)*x3 - sin(TetaZ)*y3; //x3
+	  y3 = sin(TetaZ)*x3 + cos(TetaZ)*y3;
+	  x3 = aux;
+
+	
+	   glColor3f(0, 0, 0);
+	  glBegin(GL_TRIANGLES); 
+		glVertex3f(x1,y1,z1);
+		glVertex3f(x2,y2,z2);
+		glVertex3f(x3,y3,z3);
+	  glEnd();
+
+	   printf("final: x1=%f y1=%f z1=%f \n x2=%f y2=%f z2=%f \n x3=%f y3=%f z3=%f \n\n",x1,y1,z1,x2,y2,z2,x3,y3,z3);
+	 
+}
+
+void DisplayCube(double size) {
+
+	 glColor3f(1,0,0);
+	 //back
+	glBegin(GL_POLYGON); 
+	// glBegin(GL_LINE_STRIP);
+					  glVertex3f(0,0,0);
+					  glVertex3f(size,0,0);
+					  glVertex3f(size,size,0);
+					  glVertex3f(0,size,0);
+					  glVertex3f(0,0,0);
+   glEnd();
+  
+   //left
+    glColor3f(1,0,1);
+  	glBegin(GL_POLYGON); 
+	//glBegin(GL_LINE_STRIP);
+					  glVertex3f(0,0,0);
+					  glVertex3f(0,0,size);
+					  glVertex3f(0,size,size);
+					  glVertex3f(0,size,0);
+					  glVertex3f(0,0,0);
+   glEnd();
+  
+    //down
+   glColor3f(0,0,1);
+   glBegin(GL_POLYGON); 
+  // glBegin(GL_LINE_STRIP);
+					  glVertex3f(0,0,0);
+					  glVertex3f(size,0,0);
+					  glVertex3f(size,0,size);
+					  glVertex3f(0,0,size);
+					  glVertex3f(0,0,0);
+   glEnd();
+   
+   //up
+   glColor3f(0,0,1);
+     glBegin(GL_POLYGON); 
+   //glBegin(GL_LINE_STRIP);
+					  glVertex3f(0,size,0);
+					  glVertex3f(size,size,0);
+					  glVertex3f(size,size,size);
+					  glVertex3f(0,size,size);
+					  glVertex3f(0,size,0);
+   glEnd();
+  
+    //front
+    glColor3f(1,0,0);
+   glBegin(GL_POLYGON);
+	//glBegin(GL_LINE_STRIP);
+					  glVertex3f(0,0,size);
+					  glVertex3f(size,0,size);
+					  glVertex3f(size,size,size);
+					  glVertex3f(0,size,size);
+					  glVertex3f(0,0,size);
+   glEnd();
+
+    //right
+    glColor3f(1,0,1);
+   	glBegin(GL_POLYGON); 
+	//glBegin(GL_LINE_STRIP);
+					  glVertex3f(size,0,0);
+					  glVertex3f(size,0,size);
+					  glVertex3f(size,size,size);
+					  glVertex3f(size,size,0);
+					  glVertex3f(size,0,0);
+   glEnd();
+
+}
+
+void RotateCube(int N) {
+	
+	double d1 = 90 - (180*asin(1/sqrt(3.0))/PI);
+	double d2 = 45;
+	glRotated(-45, 0,0,1);
+	glRotated(-d1, 1,0,0);
+	glRotated(N, 0,0,1);
+	glRotated(d1, 1,0,0);
+	glRotated(45, 0,0,1);
+
+		
+	DisplayCube(3);
+}
+
+void Init(void) {
+  glClearColor(1, 1, 1, 1);
+  glLineWidth(2);
+  glPointSize(3);
+
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  glOrtho(-10, 10, -10, 10, 30, -30);
+
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
+  glRotated(20, 1, 0, 0);
+  glRotated(-20, 0, 1, 0);
+
+  glPolygonMode(GL_FRONT, GL_FILL);
+  glPolygonMode(GL_BACK, GL_FILL);
+}
+
+void Display(void) {
+	
+  switch(prevKey) 
+  {
+	
+  case 't':
+	  glClear(GL_COLOR_BUFFER_BIT);
+	  DisplayAxe();
+	  //DisplayTriangle(3.0,5.0,6.5,7.0,8.0,1.0,6.5,10.0,8.3);
+	  DisplayTriangle(2,1,0,7,0,0,0,3,-7);
+	  break;
+
+  case 'c':	
+	  glClear(GL_COLOR_BUFFER_BIT);
+	  glMatrixMode(GL_MODELVIEW);
+		glPushMatrix();
+		glLoadIdentity();
+
+		glRotated(45, 1, 0, 0);
+		glRotated(-45, 0, 1, 0);
+	
+		DisplayAxe();
+		RotateCube(angle);
+	
+		glPopMatrix();
+
+		angle += 10;
+	  break;
+  case 'a':
+    DisplayAxe();
+    break;
+  case '0':
+    glClear(GL_COLOR_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glRotated(20, 1, 0, 0);
+    glRotated(-20, 0, 1, 0);
+    break;
+ 
+  default:
+    break;
+  }
+  glutSwapBuffers();
+}
+
+void Reshape(int w, int h) {
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+void KeyboardFunc(unsigned char key, int x, int y) {
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y) {
+}
+
+int main(int argc, char** argv) {
+
+   glutInit(&argc, argv);
+   
+   glutInitWindowSize(dim, dim);
+
+   glutInitWindowPosition(100, 100);
+
+   glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
+
+   glutCreateWindow (argv[0]);
+
+   Init();
+
+   glutReshapeFunc(Reshape);
+   
+   glutKeyboardFunc(KeyboardFunc);
+   
+   glutMouseFunc(MouseFunc);
+
+   glutDisplayFunc(Display);
+   
+   glutMainLoop();
+
+   return 0;
+}
+
+##################################################################
+
+//Tema 7
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+#include "glut.h"
+
+// dimensiunea ferestrei in pixeli
+#define dim 350
+
+unsigned char prevKey;
+GLint k;
+// latura cubului
+GLdouble lat = 5;
+double PI=4 * atan(1.0);
+
+void proiectieOblica();
+void proiectieParalela(unsigned char);
+void DisplayAxe();
+void InitObiect();
+void DisplayObiect();
+
+void DisplayImage2() {
+
+}
+
+
+void Init(void) {
+   glClearColor(1, 1, 1, 1);
+
+   // validare test de adancime
+   glEnable(GL_DEPTH_TEST);
+
+   // se aloca 1 lista de display numerotata k
+   k = glGenLists(1);
+   InitObiect();
+
+   glMatrixMode(GL_MODELVIEW);
+   glLoadIdentity();
+
+   glMatrixMode(GL_PROJECTION);
+   glLoadIdentity();
+}
+
+void Display()
+{
+  switch(prevKey) 
+  {
+  case '0':
+    // resetarea stivei matricilor de modelare si a celei de proiectie
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    DisplayAxe();
+    break;
+
+	
+  case 'A':
+    DisplayAxe();
+    break;
+  case 'C':
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    break;
+  case 'X':
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    proiectieParalela('X');
+    glMatrixMode(GL_MODELVIEW);
+    glRotatef(10, 1, 0, 0);
+    DisplayAxe();
+    DisplayObiect();
+    break;
+  case 'Y':
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    proiectieParalela('Y');
+    glMatrixMode(GL_MODELVIEW);
+    glRotatef(10, 0, 1, 0);
+    DisplayAxe();
+    DisplayObiect();
+    break;
+  case 'Z':
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    proiectieParalela('Z');
+    glMatrixMode(GL_MODELVIEW);
+    glRotatef(10, 0, 0, 1);
+    DisplayAxe();
+    DisplayObiect();
+    break;
+  case 'q':
+    // proiectie paralela ortografica frontala (fata)
+    proiectieParalela('q');
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    DisplayAxe();
+    glTranslated(0, 0, -lat);
+    DisplayObiect();
+    break;
+  case 'w':
+    // proiectie paralela ortografica frontala (spate)
+    proiectieParalela('w');
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glPushMatrix();
+      glTranslated(0, 0, -lat);
+      glTranslated(lat/2.0, lat/2.0, lat/2.0);
+      glRotated(180, 0, 1, 0);
+      glTranslated(-lat/2.0, -lat/2.0, -lat/2.0);
+      DisplayAxe();
+      DisplayObiect();
+    glPopMatrix();
+    break;
+
+	//imaginea 1
+	 case 't':
+		// proiectie paralela ortografica deasupra (top)
+		proiectieParalela('t');
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glMatrixMode(GL_MODELVIEW);
+		glLoadIdentity();
+		glRotated(90, 1, 0, 0);
+		glTranslated(0, 0, -lat);
+		glTranslated(0, -lat, 0);
+		DisplayAxe();
+		DisplayObiect();
+		break;
+
+	//imaginea 2- perspectiva
+  case 'o':
+    proiectieOblica();
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glPushMatrix();
+      DisplayAxe();
+      DisplayObiect();
+    glPopMatrix();
+	  break;
+
+	  //imaginea 3 - cabinet
+  case 'c':
+	  {
+		double angle = 30.0;
+		double c = -0.5 * cos(angle * PI / 180);
+		double s = -0.5 * sin(angle * PI / 180);
+
+		glMatrixMode(GL_PROJECTION);
+		glLoadIdentity();
+
+		glOrtho(-10,10,-10,10,-10,20);
+
+		GLdouble projOblique[] =
+		{1.0, 0.0, 0.0, 0.0,
+		0.0, 1.0, 0.0, 0.0,
+		c, s, 1.0, 0.0,
+		0.0, 0.0, 0.0, 1.0};
+
+		glMultMatrixd(projOblique);
+
+		glScaled(1.5,1.5,1.5);
+
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glMatrixMode(GL_MODELVIEW);
+		glLoadIdentity();
+		glPushMatrix();
+		  DisplayAxe();
+		  DisplayObiect();
+		glPopMatrix();
+		  break;
+	  }
+  default:
+    break;
+  }
+  glutSwapBuffers();
+}
+
+void Reshape(int w, int h) {
+   h = (h == 0) ? 1 : h;      
+   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+
+void KeyboardFunc(unsigned char key, int x, int y) {
+   prevKey = key;
+   if (key == 27) // escape
+      exit(0);
+   glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y) {
+}
+
+int main(int argc, char** argv) {
+
+   glutInit(&argc, argv);
+   
+   glutInitWindowSize(dim, dim);
+
+   glutInitWindowPosition(100, 100);
+
+   // GLUT_DEPTH - eliminarea suprafetelor ascunse cu alg. Z-buffer
+   glutInitDisplayMode (GL_COLOR_BUFFER_BIT | GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+
+   glutCreateWindow (argv[0]);
+
+   Init();
+
+   glutReshapeFunc(Reshape);
+   
+   glutKeyboardFunc(KeyboardFunc);
+   
+   glutMouseFunc(MouseFunc);
+
+   glutDisplayFunc(Display);
+
+   glutMainLoop();
+
+   return 0;
+}
+
+void proiectieOblica() {
+	 glMatrixMode(GL_PROJECTION);
+	 glLoadIdentity();
+   
+	 glFrustum(-lat, lat, -lat, lat, 5, 50);
+	 gluLookAt(lat*2.5,lat*2.7,4.5*lat,
+				lat*2.5,lat*2.7,0,
+				0,1,0);
+ 
+}
+
+void proiectieParalela(unsigned char c) {
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  switch (c) {
+  case 'X':
+  case 'Y':
+  case 'Z':
+    glOrtho(-10, 10, -10, 10, -20, 20);
+    break;
+  case 'q':
+  case 'w':
+  case 't':
+    glOrtho(-1, 6, -1, 6, -1, 20);
+    break;
+  default:
+    break;
+  }
+}
+
+void DisplayAxe() {
+	int X, Y, Z;
+	X = Y = 200;
+  Z = 200;
+  glLineWidth(2);
+
+  // axa Ox - verde
+  glColor3f(0.1, 1, 0.1);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(X,0,0);
+  glEnd();
+
+  // axa Oy - albastru
+  glColor3f(0.1, 0.1, 1);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(0,Y,0);
+  glEnd();
+
+  // axa Oz - rosu
+  glColor3f(1, 0.1, 0.1);
+  glBegin(GL_LINE_STRIP); 
+    glVertex3f(0,0,0);
+    glVertex3f(0,0,Z);
+  glEnd();
+
+  glLineWidth(1);
+}
+
+void InitObiect() {
+  glNewList(k, GL_COMPILE);
+  // fata 1
+  glColor3f(1, 0, 0); // rosu
+  glBegin(GL_QUADS);
+    glVertex3d(0, lat, lat);
+    glVertex3d(lat, lat, lat);
+    glVertex3d(lat, 0, lat);
+    glVertex3d(0, 0, lat);
+  glEnd();
+  // fata 2
+  glColor3f(1, 1, 0); // galben
+  glBegin(GL_QUADS);
+    glVertex3d(lat, 0, 0);
+    glVertex3d(lat, 0, lat);
+    glVertex3d(lat, lat, lat);
+    glVertex3d(lat, lat, 0);
+  glEnd();
+  // fata 3
+  glColor3f(0, 1, 0); // verde
+  glBegin(GL_QUADS);
+    glVertex3d(0, lat, lat);
+    glVertex3d(lat, lat, lat);
+    glVertex3d(lat, lat, 0);
+    glVertex3d(0, lat, 0);
+  glEnd();
+  // fata 4
+  glColor3f(0, 0, 1); // albastru
+  glBegin(GL_QUADS);
+    glVertex3d(0, 0, 0);
+    glVertex3d(lat, 0, 0);
+    glVertex3d(lat, 0, lat);
+    glVertex3d(0, 0, lat);
+  glEnd();
+  // fata 5
+  glColor3f(1, 0, 1);  // magenta
+  glBegin(GL_QUADS);
+    glVertex3d(0, 0, lat);
+    glVertex3d(0, 0, 0);
+    glVertex3d(0, lat, 0);
+    glVertex3d(0, lat, lat);
+  glEnd();
+  // fata 6
+  glColor3f(0, 1, 1); // cyan
+  glBegin(GL_QUADS);
+    glVertex3d(0, lat, 0);
+    glVertex3d(lat, lat, 0);
+    glVertex3d(lat, 0, 0);
+    glVertex3d(0, 0, 0);
+  glEnd();
+  glEndList();
+}
+
+void DisplayObiect()
+{
+  glCallList(k);
+}  

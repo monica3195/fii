@@ -1,0 +1,1 @@
+linus torvalds (n. 1969, helsinki, finlanda) este un finlandez, care a început dezvoltarea nucleului sistemului de operare linux, iar astăzi este coordonator la proiectul de al acestuia. inspirat de sistemul de operare demonstrativ creat de andrew tanenbaum, linus a dorit să aibă propriul pe pc-ul de acasă. nucleul dezvoltat de el se află sub licența public license. 

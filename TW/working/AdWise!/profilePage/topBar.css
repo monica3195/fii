@@ -1,0 +1,174 @@
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+/*nav*/
+
+.nav-wrapper{
+    background: black;
+    height: 60px;
+
+}
+.nav {
+	width: 1920px;
+    margin: 0 auto;
+
+}
+
+.nav li {
+	float: left;
+	list-style-type: none;
+	position: relative;
+}
+
+.nav li a {
+	font-size: 16px; 
+	color: white;
+	display: block;
+	line-height: 60px;
+	padding: 0 26px;
+	text-decoration: none;
+	border-left: 1px solid #000323;
+	font-family: Montserrat, sans-serif;
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.nav li a:hover {
+	background-color: black;
+}
+
+/*subnav*/
+
+.subnav {
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: all 0.1s;
+    background: black;
+}
+.subnav li {
+    float: none;
+}
+.subnav li a {
+    border-bottom: 1px solid #2e2e2e;
+}
+
+/*home*/
+
+#home a {
+	padding: 18px;
+	height: 24px;
+	font-size: 10px;
+	line-height: 24px;
+}
+
+/*categorii*/
+#categories a{
+    border-left: 0 none;
+}
+#categories>a {
+    background-image: url(images/triangle.png);
+    background-position: 85% center;
+    background-repeat: no-repeat;
+    padding-right: 42px;
+}
+
+#categories:hover .subnav {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+
+
+/*banner*/
+#banner{
+    width: 45%;
+}
+#banner a{
+    margin-top: 18px;
+    height: 36px;
+    background: center no-repeat;
+    font-size: 36px;
+    color: red;
+    line-height: 24px;
+    margin-right: 2%;
+    float: right;
+}
+
+/*search box*/
+#search {
+	width: 14%;
+	margin: 4px;
+    margin-left: 10%;
+}
+#search_text{
+	width: 80%;
+	padding: 15px 0 15px 20px;
+	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	border: 0 none;
+	height: 52px;
+	margin-right: 0;
+	color: black;
+	outline: none;
+	background: white;
+	float: left;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+#search_text:focus {
+	background: lightgrey;
+}
+
+
+/*search button*/
+#search_button {
+	border: 0 none;
+	background: lightgrey url(images/search.png) center no-repeat;
+	width: 52px;
+	float: left;
+	padding: 0;
+	text-align: center;
+	height: 52px;
+	cursor: pointer;
+}
+
+/*search options*/
+#search_options a{
+	border-left: 0 none;
+}
+#search_options>a {
+	background-image: url(images/triangle.png);
+	background-position: 100% center;
+	background-repeat: no-repeat;
+}
+#search_options:hover .subnav {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+
+/*profile*/
+
+#profile:hover .subnav {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+#profile{
+    float: right;
+    margin-right: 1%;
+}
+#profile a {
+    background-image: url(images/profile.png);
+    background-position: 85% center;
+    background-repeat: no-repeat;
+    padding-right: 100px;
+}
+

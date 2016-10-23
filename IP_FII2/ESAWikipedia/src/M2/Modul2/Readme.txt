@@ -1,0 +1,3 @@
+Concepts identification
+Pornesti aplicatia din MainWindow.Are nevoie lista de concepte sub numele de "rowiki.txt" sau il modifici din clasa concepts la numeDump .Deasemenea locatia fisierelor wikipedia o modifici din BackgroundRun.Va crea o noua ierarhie de foldere incepand cu Dump in care sunt folderele ce contin fisierele Wikipedia.Fiecare folder contine cate 2 fisiere pentru fiecare pagina, unul cu concepte si celalt cu cuvintele ramase dupa procesare.Da ai de modificat ceva poti modifica in ProcessingWikipedia. 
+Are o parte din Wikipedia in folderul DUML DECI POTI SA DAI O RULARE CAND IL PRIMESTI SA VEZI DACA MERGE DUPA CARE MODIFICI CE AI NEVOIE.

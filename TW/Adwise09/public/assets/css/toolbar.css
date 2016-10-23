@@ -1,0 +1,117 @@
+* {
+    margin: 0; 
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.toolbar {
+  width: 100%;
+  background: #000000;
+}
+
+.main-header {
+  margin: auto;
+  height: 45px;
+  background: #000000;
+  width: 1267px;
+}
+
+.logo {
+    display: block;
+    float: left;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #F0F0F0;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.navigation {
+    width: 650px;
+    float: left;
+    margin-left: 400px;
+    max-width: 900px;
+    height: 100%;
+}
+
+.sign-up-or-profile-button,.login-or-logout-button,.search-form{
+  float: left;
+  padding-top: 15px;
+  height: 30px;
+}
+
+.sign-up-or-profile-button,.search-form {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.search-form {
+  width: 470px;
+}
+
+#dropdown {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */ 
+}
+
+#dropdown:after {
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%;
+}
+
+.drop-nav{
+  position: absolute;
+  display: none;
+}
+
+#dropdown:hover > .drop-nav{
+  display: block;
+}
+
+.category {
+  background-color: #000000 ;
+  width: 100px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.category:hover {
+  background-color: #909090 ;
+}
+
+.login-or-logout-button {
+  width: 50px;
+  padding-left: 7px;
+}
+
+.sign-up-or-profile-button:hover {
+  background-color: #909090 ;
+}
+
+.login-or-logout-button:hover {
+  background-color: #909090 ;  
+}
+
+.search-form,.login-or-logout-button,.sign-up-or-profile-button {
+  color: white;  
+}
+
+.tftextinput,.tfbutton,.type-of-search {
+    float: left;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

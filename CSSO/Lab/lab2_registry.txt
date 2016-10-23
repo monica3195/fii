@@ -1,0 +1,5 @@
+Registry : 
+
+	.ini before
+	[Video]
+	Resolution="123x321"

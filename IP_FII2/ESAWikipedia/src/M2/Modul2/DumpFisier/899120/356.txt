@@ -1,0 +1,1 @@
+binară este cea mai simplă și cea mai de structurare a operațiilor logice. binară pornește de la premiza că o poate avea numai unul din două rezultate posibile: sau fals. în abstract, se folosi și valorile binare și respectiv pentru a reprezenta cele două alternative. 

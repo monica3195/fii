@@ -1,0 +1,1 @@
+@C:\Users\Pirghie\Documents\GitHub\SGBG_HomeWork_FII2\Pirghie_Dimitrie_B1_7\Pirghie_Dimitrie_B1_7.sql

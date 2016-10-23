@@ -1,0 +1,18 @@
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\bin\Debug\Tema1CN.exe.config
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\bin\Debug\Tema1CN.exe
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\bin\Debug\Tema1CN.pdb
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.csprojResolveAssemblyReference.cache
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.Form1.resources
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.Properties.Resources.resources
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.csproj.GenerateResource.Cache
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.exe
+D:\Facultate\Visual Studio\Tema1CN\Tema1CN\obj\Debug\Tema1CN.pdb
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\bin\Debug\Tema1CN.exe.config
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.exe
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.pdb
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\bin\Debug\Tema1CN.exe
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\bin\Debug\Tema1CN.pdb
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.csprojResolveAssemblyReference.cache
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.Form1.resources
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.Properties.Resources.resources
+D:\Facultate\S2\Tu Alin Alin Alin\CN\Tema1CN\Tema1CN\obj\Debug\Tema1CN.csproj.GenerateResource.Cache

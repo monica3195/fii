@@ -1,0 +1,1 @@
+este un de operare gratuit derivat din (networking/2), din unix, pentru arhitecturile 80386. 

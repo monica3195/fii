@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+}
+
+#page {
+    width: 1263px;
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.question {
+    height: 400px;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 150px;
+}
+
+.content {
+    padding: 2%;
+    height: 250px;
+    float: left;
+    border-radius: 15px;
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    max-height: 600px;
+    width: 730px;
+}
+
+.info {
+    padding: 2%;
+    padding-bottom: 0;
+    padding-top: 0.5%;
+    height: 77%;
+    float: left;
+    width: 310px;
+    margin-right: 20px;
+    margin-left: 2%;
+}
+
+.rating,.views {
+    border-radius: 15px;
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    width: 100px;
+    height: 50px;
+    padding-top: 5px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.rating {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.value {
+    padding-bottom: 5px;
+}
+
+.general-info {
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    border-radius: 15px;
+    width: 310px;
+    height: 80px;
+    float: left;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    padding: 5px;
+    padding-top: 15px;
+
+}
+
+.posted-by, .category-name {
+    margin-top: 5px;
+}
+
+.question-delimiter-bottom {
+    width: 100%;
+}
+
+div[class="content"] > p {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.vote-question {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.downvote-answer,.upvote-answer, .upvote,.downvote {
+    font-size: 18px;
+    float: left;
+    margin-left: 30px;
+    height: 25px;
+    line-height: 25px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    text-align: center;
+}
+
+
+
+ .upvote-answer:hover, .upvote:hover{
+    font-size: 22px;
+    cursor:pointer;
+    background-color: #00FF66  ;
+    border: solid 5px #009933  ;
+}
+
+.downvote-answer:hover,.downvote:hover {
+    font-size: 22px;
+    cursor:pointer;
+    background-color: #FF3300  ;
+    border: solid 5px #B80000  ;
+}
+
+ .tags {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+    margin-right: 100px;
+}
+
+.tag-word {
+    width: 30px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 5px;
+    font-size: 16.5px;
+}
+
+.single-tag {
+    border-radius: 15px;
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    padding: 1px 5px 1px 5px;
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-shadow: 0px 0px 0.2px #000000;}
+
+.after-question {
+    display: block;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+}
+
+.nmb-answ {
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.nmb-answ-word {
+    float: left;
+    font-size: 24px ;
+    margin-right: 20px;
+}
+
+.nmb-answ-number {
+    float: left;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.answer {
+    margin-bottom: 150px;
+    float: left;
+    width: 95%;
+}
+
+.rating-answer {
+    border-radius: 15px;
+    background-color: #F0F0F0 ;
+    border: solid 5px #D0D0D0 ;
+    width: 100px;
+    height: 45px;
+    margin-top: 40px ;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.vote-answer {
+    width: 300px;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#post-answer {
+    width: 900px;
+    background-color: #F0F0F0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    float: left;
+    height: 270px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    border-radius: 15px;
+    border: solid 5px #D0D0D0 ;
+}
+
+.textarea-button {
+    width: 800px;
+    float: left;
+    margin-left: 30px;
+}
+
+textarea {
+    font-size: 20px;
+    resize: none;
+}
+
+.post-button {
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+    width: 300px;
+}
+
+.delete:before {
+    content: "\2716";
+}
+
+.delete-wrapper {
+    width: 100% ;
+}
+
+.delete {
+    height: 20px;
+    margin-left: 99%;
+}
+
+.delete:hover {
+    color: red  ;
+    border-radius:5px;
+    cursor: pointer;
+}

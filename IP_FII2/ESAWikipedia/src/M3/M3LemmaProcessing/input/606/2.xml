@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS_Output>
+  <S id="1" offset="0">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="muzică" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.1" offset="0">Muzica</W>
+    <W LEMMA="(" MSD="LPAR" id="1.2" offset="7">(</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="1.3" offset="8">din</W>
+    <W LEMMA="gramatică" MSD="Y" POS="ABBREVIATION" id="1.4" offset="12">gr.</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="masculine" LEMMA="mousikē" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.5" offset="16">mousikē</W>
+    <W LEMMA=")" MSD="RPAR" id="1.6" offset="23">)</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="1.7" offset="25">este</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="artă" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.8" offset="30">arta</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="combinare" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="1.9" offset="35">combinării</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="notă" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="1.10" offset="46">notelor</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="1.11" offset="54">în</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="succesiune" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="1.12" offset="57">succesiune</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="1.13" offset="68">și</W>
+    <W LEMMA="simultan" MSD="Rg" POS="ADVERB" id="1.14" offset="71">simultan</W>
+    <W LEMMA="întru" MSD="Sp" POS="ADPOSITION" id="1.15" offset="80">într-</W>
+    <W Case="direct" Gender="feminine" LEMMA="un" MSD="Tifsr" Number="singular" POS="ARTICLE" Type="indefinite" id="1.16" offset="85">o</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="formă" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="1.17" offset="87">formă</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:plăcea(tranzitiv)" Gender="feminine" LEMMA="plăcut" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="1.18" offset="93">plăcută</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="estetic" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.19" offset="101">estetic</W>
+    <W LEMMA="," MSD="COMMA" id="1.20" offset="108">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="organizare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.21" offset="110">organizarea</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="ritmic" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="1.22" offset="122">ritmică</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="1.23" offset="130">a</W>
+    <W Case="oblique" LEMMA="acest" MSD="Dd3-po---e" Number="plural" POS="DETERMINER" Person="third" Positioning="prenominal" Type="demonstrative" id="1.24" offset="132">acestor</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="notă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="1.25" offset="140">note</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="1.26" offset="145">și</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="integrare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.27" offset="148">integrarea</W>
+    <W LEMMA="lui" MSD="Ds3---p" POS="DETERMINER" Person="third" Possessor_number="plural" Type="possessive" id="1.28" offset="159">lor</W>
+    <W LEMMA="întru" MSD="Sp" POS="ADPOSITION" id="1.29" offset="163">într-</W>
+    <W Case="direct" Gender="feminine" LEMMA="un" MSD="Tifsr" Number="singular" POS="ARTICLE" Type="indefinite" id="1.30" offset="168">o</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="lucrare" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="1.31" offset="170">lucrare</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="complet" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="1.32" offset="178">completă</W>
+    <W LEMMA="." MSD="PERIOD" id="1.33" offset="186">.</W>
+  </S>
+</POS_Output>

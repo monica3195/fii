@@ -1,0 +1,16 @@
+Tema 4
+
+1 2 martori (rosie)
+(arc de) cerc
+(arc de) elipsa
+
+glBegin(GL_LINE_STRIP);
+...
+glEnd
+
+coord. polare:
+cerc C((0,0),R);
+
+x=R cos t
+y=R sin t
+

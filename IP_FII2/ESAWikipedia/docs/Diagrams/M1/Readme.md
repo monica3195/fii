@@ -1,0 +1,3 @@
+- [Collaboration](CollaborationDiagram.png) & [UseCase](UseCaseDiagram.png) - __Cretu Eusebiu__
+- [Activity](ActivityDiagram.png) & [Statechart](StatechartDiagram.png) - __Tofan Eduard__
+- [Class](ClassDiagram.png) & [Deployment](DeploymentDiagram.png) - __Pirghie Dimitrie__

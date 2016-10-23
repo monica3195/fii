@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS_Output>
+  <S id="1" offset="0">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="1.1" offset="0">Luna</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="1.2" offset="5">este</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="singur" MSD="Afpmsry" Number="singular" POS="ADJECTIVE" id="1.3" offset="10">singurul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="satelit" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="1.4" offset="19">satelit</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="natural" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="1.5" offset="27">natural</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="1.6" offset="35">al</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="pământ" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="1.7" offset="38">Pământului</W>
+    <W LEMMA="," MSD="COMMA" id="1.8" offset="48">,</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="1.9" offset="50">și</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="1.10" offset="53">al</W>
+    <W Definiteness="yes" Form="letter" Gender="masculine" LEMMA="cinci" MSD="Moms-ly" Number="singular" POS="NUMERAL" Type="ordinal" id="1.11" offset="56">cincilea</W>
+    <W LEMMA="ca" MSD="Rg" POS="ADVERB" id="1.12" offset="65">ca</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mărime" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="1.13" offset="68">mărime</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="1.14" offset="75">din</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="sistem" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="1.15" offset="79">Sistemul</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="solar" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="1.16" offset="88">Solar</W>
+    <W LEMMA="." MSD="PERIOD" id="1.17" offset="93">.</W>
+  </S>
+  <S id="2" offset="95">
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="2.1" offset="0">Este</W>
+    <W LEMMA="," MSD="COMMA" id="2.2" offset="4">,</W>
+    <W LEMMA="totodată" MSD="Rg" POS="ADVERB" id="2.3" offset="6">totodată</W>
+    <W LEMMA="," MSD="COMMA" id="2.4" offset="14">,</W>
+    <W Case="direct" Gender="masculine" LEMMA="cel" MSD="Tdmsr" Number="singular" POS="ARTICLE" Type="demonstrative" id="2.5" offset="16">cel</W>
+    <W LEMMA="mai" MSD="Rg" POS="ADVERB" id="2.6" offset="20">mai</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mare" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="2.7" offset="24">mare</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="satelit" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="2.8" offset="29">satelit</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="natural" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="2.9" offset="37">natural</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="2.10" offset="45">al</W>
+    <W Case="oblique" Gender="feminine" LEMMA="un" MSD="Tifso" Number="singular" POS="ARTICLE" Type="indefinite" id="2.11" offset="48">unei</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="planetă" MSD="Ncfson" Number="singular" POS="NOUN" Type="common" id="2.12" offset="53">planete</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="2.13" offset="61">din</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="sistem" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="2.14" offset="65">Sistemul</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="solar" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="2.15" offset="74">Solar</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:raporta(tranzitiv)" Gender="masculine" LEMMA="raportat" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="2.16" offset="80">raportat</W>
+    <W LEMMA="la" MSD="Sp" POS="ADPOSITION" id="2.17" offset="89">la</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="mărime" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="2.18" offset="92">mărimile</W>
+    <W LEMMA="dintre" MSD="Sp" POS="ADPOSITION" id="2.19" offset="101">dintre</W>
+    <W Case="direct" Gender="masculine" LEMMA="acesta" MSD="Pd3msr" Number="singular" POS="PRONOUN" Person="third" Type="demonstrative" id="2.20" offset="108">acesta</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="2.21" offset="115">și</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="planetă" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="2.22" offset="118">planeta</W>
+    <W LEMMA="pământ" MSD="Np" POS="NOUN" Type="proper" id="2.23" offset="126">Pământ</W>
+    <W LEMMA="," MSD="COMMA" id="2.24" offset="132">,</W>
+    <W EXTRA="tranzitiv" LEMMA="avea" MSD="Vmg" Mood="gerund" POS="VERB" Type="predicative" id="2.25" offset="134">având</W>
+    <W Case="direct" Gender="masculine" LEMMA="un" MSD="Timsr" Number="singular" POS="ARTICLE" Type="indefinite" id="2.26" offset="140">un</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="sfert" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="2.27" offset="143">sfert</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="2.28" offset="149">din</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="diametru" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="2.29" offset="153">diametrul</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="pământ" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="2.30" offset="163">Pământului</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="2.31" offset="174">și</W>
+    <W LEMMA="1" MSD="M" POS="NUMERAL" id="2.32" offset="177">1</W>
+    <W LEMMA="/" MSD="SLASH" id="2.33" offset="178">/</W>
+    <W EXTRA="NotInDict" LEMMA="81" MSD="M" POS="NUMERAL" id="2.34" offset="179">81</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="2.35" offset="182">din</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="masă" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="2.36" offset="186">masă</W>
+    <W LEMMA="." MSD="PERIOD" id="2.37" offset="190">.</W>
+  </S>
+  <S id="3" offset="287">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="3.1" offset="0">Luna</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="3.2" offset="5">este</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="3.3" offset="10">al</W>
+    <W Definiteness="yes" Form="letter" Gender="masculine" LEMMA="doi" MSD="Moms-ly" Number="singular" POS="NUMERAL" Type="ordinal" id="3.4" offset="13">doilea</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="satelit" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="3.5" offset="20">satelit</W>
+    <W LEMMA="ca" MSD="Rg" POS="ADVERB" id="3.6" offset="28">ca</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="densitate" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="3.7" offset="31">densitate</W>
+    <W LEMMA="după" MSD="Sp" POS="ADPOSITION" id="3.8" offset="41">după</W>
+    <W Case="direct" LEMMA="eu" MSD="Pp1-sr" Number="singular" POS="PRONOUN" Person="first" Type="personal" id="3.9" offset="46">Io</W>
+    <W LEMMA="," MSD="COMMA" id="3.10" offset="48">,</W>
+    <W Case="direct" Gender="masculine" LEMMA="unul" MSD="Pi3msr" Number="singular" POS="PRONOUN" Person="third" Type="indefinite" id="3.11" offset="50">unul</W>
+    <W LEMMA="dintre" MSD="Sp" POS="ADPOSITION" id="3.12" offset="55">dintre</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="satelit" MSD="Ncmpry" Number="plural" POS="NOUN" Type="common" id="3.13" offset="62">sateliții</W>
+    <W Case="oblique" Gender="masculine" LEMMA="el" MSD="Tfmso" Number="singular" POS="ARTICLE" Type="definite" id="3.14" offset="72">lui</W>
+    <W LEMMA="Jupiter" MSD="Np" POS="NOUN" Type="proper" id="3.15" offset="76">Jupiter</W>
+    <W LEMMA="." MSD="PERIOD" id="3.16" offset="83">.</W>
+  </S>
+  <S id="4" offset="372">
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="4.1" offset="0">În</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="rotație" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="4.2" offset="3">rotația</W>
+    <W Case="direct" Gender="feminine" LEMMA="său" MSD="Ds3fsrs" Number="singular" POS="DETERMINER" Person="third" Possessor_number="singular" Type="possessive" id="4.3" offset="11">sa</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="sincron" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="4.4" offset="14">sincronă</W>
+    <W LEMMA="în~jurul" MSD="Sp" POS="ADPOSITION" id="4.5" offset="23">în jurul</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="pământ" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="4.6" offset="32">Pământului</W>
+    <W LEMMA="," MSD="COMMA" id="4.7" offset="42">,</W>
+    <W LEMMA="Luna" MSD="Np" POS="NOUN" Type="proper" id="4.8" offset="44">Luna</W>
+    <W EXTRA="tranzitiv" LEMMA="prezenta" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="4.9" offset="49">prezintă</W>
+    <W Case="direct" Gender="feminine" LEMMA="același" MSD="Dd3fsr" Number="singular" POS="DETERMINER" Person="third" Type="demonstrative" id="4.10" offset="58">aceeași</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="față" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="4.11" offset="66">față</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="4.12" offset="71">a</W>
+    <W Case="direct" Gender="feminine" LEMMA="său" MSD="Ds3fsrs" Number="singular" POS="DETERMINER" Person="third" Possessor_number="singular" Type="possessive" id="4.13" offset="73">sa</W>
+    <W LEMMA="," MSD="COMMA" id="4.14" offset="75">,</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="4.15" offset="77">cu</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mic" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="4.16" offset="80">mici</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="schimbare" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="4.17" offset="85">schimbări</W>
+    <W LEMMA="." MSD="PERIOD" id="4.18" offset="94">.</W>
+  </S>
+  <S id="5" offset="468">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="priveliște" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="5.1" offset="0">Priveliștea</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="selenar" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="5.2" offset="12">selenară</W>
+    <W EXTRA="tranzitiv" LEMMA="cuprinde" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="5.3" offset="21">cuprinde</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="con" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.4" offset="30">conuri</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="vulcanic" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="5.5" offset="37">vulcanice</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:întuneca(tranzitiv)" Gender="feminine" LEMMA="întunecat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="5.6" offset="47">întunecate</W>
+    <W LEMMA="," MSD="COMMA" id="5.7" offset="57">,</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="zonă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.8" offset="59">zone</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.9" offset="64">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="pământ" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="5.10" offset="67">pământ</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="5.11" offset="74">și</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="crater" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.12" offset="77">cratere</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.13" offset="85">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="impact" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="5.14" offset="88">impact</W>
+    <W LEMMA="." MSD="PERIOD" id="5.15" offset="94">.</W>
+  </S>
+  <S id="6" offset="564">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="6.1" offset="0">Luna</W>
+    <W LEMMA="mai" MSD="Rg" POS="ADVERB" id="6.2" offset="5">mai</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="6.3" offset="9">este</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="6.4" offset="14">și</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="6.5" offset="17">al</W>
+    <W Definiteness="yes" Form="letter" Gender="masculine" LEMMA="doi" MSD="Moms-ly" Number="singular" POS="NUMERAL" Type="ordinal" id="6.6" offset="20">doilea</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="obiect" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="6.7" offset="27">obiect</W>
+    <W LEMMA="ca" MSD="Rg" POS="ADVERB" id="6.8" offset="34">ca</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="luminozitate" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="6.9" offset="37">luminozitate</W>
+    <W LEMMA="de~pe" MSD="Sp" POS="ADPOSITION" id="6.10" offset="50">de pe</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="cer" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="6.11" offset="56">cerul</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:înstela(intranzitiv)" Gender="masculine" LEMMA="înstelat" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="6.12" offset="62">înstelat</W>
+    <W LEMMA="," MSD="COMMA" id="6.13" offset="70">,</W>
+    <W LEMMA="după" MSD="Sp" POS="ADPOSITION" id="6.14" offset="72">după</W>
+    <W LEMMA="soare" MSD="Np" POS="NOUN" Type="proper" id="6.15" offset="77">Soare</W>
+    <W LEMMA="," MSD="COMMA" id="6.16" offset="82">,</W>
+    <W LEMMA="în~ciuda" MSD="Sp" POS="ADPOSITION" id="6.17" offset="84">în ciuda</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="fapt" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="6.18" offset="93">faptelor</W>
+    <W LEMMA="că" MSD="Cs" POS="CONJUNCTION" id="6.19" offset="102">că</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="suprafață" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="6.20" offset="105">suprafața</W>
+    <W Case="direct" Gender="feminine" LEMMA="său" MSD="Ds3fsrs" Number="singular" POS="DETERMINER" Person="third" Possessor_number="singular" Type="possessive" id="6.21" offset="115">sa</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="6.22" offset="118">este</W>
+    <W LEMMA="în~totalitate" MSD="Rg" POS="ADVERB" id="6.23" offset="123">în totalitate</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="negru" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="6.24" offset="137">neagră</W>
+    <W LEMMA=";" MSD="SCOLON" id="6.25" offset="143">;</W>
+  </S>
+  <S id="7" offset="709">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="7.1" offset="0">Luna</W>
+    <W Case="direct" LEMMA="sine" MSD="Px3--r" POS="PRONOUN" Person="third" Type="reflexive" id="7.2" offset="5">se</W>
+    <W EXTRA="tranzitiv" LEMMA="vedea" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="7.3" offset="8">vede</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="strălucitor" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="7.4" offset="13">strălucitoare</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:datori(tranzitiv)" Gender="feminine" LEMMA="datorit" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="7.5" offset="27">datorită</W>
+    <W Case="oblique" Definiteness="yes" Gender="masculine" LEMMA="fapt" MSD="Ncmsoy" Number="singular" POS="NOUN" Type="common" id="7.6" offset="36">faptului</W>
+    <W LEMMA="că" MSD="Cs" POS="CONJUNCTION" id="7.7" offset="45">că</W>
+    <W EXTRA="tranzitiv" LEMMA="reflecta" MSD="Vmis3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="past" Type="predicative" id="7.8" offset="48">reflectă</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lumină" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="7.9" offset="57">lumina</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:primi(tranzitiv)" Gender="feminine" LEMMA="primit" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="7.10" offset="64">primită</W>
+    <W LEMMA="de~la" MSD="Sp" POS="ADPOSITION" id="7.11" offset="72">de la</W>
+    <W LEMMA="soare" MSD="Np" POS="NOUN" Type="proper" id="7.12" offset="78">Soare</W>
+    <W LEMMA="." MSD="PERIOD" id="7.13" offset="83">.</W>
+  </S>
+  <S id="8" offset="794">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="schimbare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="8.1" offset="0">Schimbarea</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="lună" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="8.2" offset="11">Lunii</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="8.3" offset="17">în</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="multitudine" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="8.4" offset="20">multitudinea</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="8.5" offset="33">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="fază" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="8.6" offset="36">faze</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="8.7" offset="41">și</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="8.8" offset="44">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="formă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="8.9" offset="47">forme</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="semicircular" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="8.10" offset="53">semicirculare</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="8.11" offset="67">a</W>
+    <W EXTRA="tranzitiv" LEMMA="aduce" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="8.12" offset="69">adus</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mare" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="8.13" offset="74">mari</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="influență" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="8.14" offset="79">influențe</W>
+    <W LEMMA="," MSD="COMMA" id="8.15" offset="88">,</W>
+    <W LEMMA="încă" MSD="Rg" POS="ADVERB" id="8.16" offset="90">încă</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="8.17" offset="95">din</W>
+    <W Case="direct" Gender="feminine" LEMMA="cel" MSD="Tdfpr" Number="plural" POS="ARTICLE" Type="demonstrative" id="8.18" offset="99">cele</W>
+    <W LEMMA="mai" MSD="Rg" POS="ADVERB" id="8.19" offset="104">mai</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="vechi" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="8.20" offset="108">vechi</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="timp" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="8.21" offset="114">timpuri</W>
+    <W LEMMA="," MSD="COMMA" id="8.22" offset="121">,</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="8.23" offset="123">în</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="dezvoltare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="8.24" offset="126">dezvoltarea</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="limbă" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="8.25" offset="138">limbilor</W>
+    <W LEMMA="," MSD="COMMA" id="8.26" offset="146">,</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="calendar" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="8.27" offset="148">calendarelor</W>
+    <W LEMMA="," MSD="COMMA" id="8.28" offset="160">,</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="artă" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="8.29" offset="162">artei</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="8.30" offset="168">și</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="8.31" offset="171">a</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="mitologie" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="8.32" offset="173">mitologiei</W>
+    <W LEMMA="." MSD="PERIOD" id="8.33" offset="183">.</W>
+  </S>
+  <S id="9" offset="979">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="9.1" offset="0">Luna</W>
+    <W EXTRA="tranzitiv" LEMMA="avea" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="9.2" offset="5">are</W>
+    <W Case="direct" Gender="feminine" LEMMA="un" MSD="Tifsr" Number="singular" POS="ARTICLE" Type="indefinite" id="9.3" offset="9">o</W>
+    <W LEMMA="foarte" MSD="Rg" POS="ADVERB" id="9.4" offset="11">foarte</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mare" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="9.5" offset="18">mare</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="importanță" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="9.6" offset="23">importanță</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="9.7" offset="34">în</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="viață" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="9.8" offset="37">viața</W>
+    <W LEMMA="de~pe" MSD="Sp" POS="ADPOSITION" id="9.9" offset="43">de pe</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="Terra" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="9.10" offset="49">Terra</W>
+    <W LEMMA=";" MSD="SCOLON" id="9.11" offset="54">;</W>
+  </S>
+  <S id="10" offset="1035">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="influență" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="10.1" offset="0">influențele</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="gravitațional" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="10.2" offset="12">gravitaționale</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfpr" Number="plural" POS="ARTICLE" Type="possessive" id="10.3" offset="27">ale</W>
+    <W Case="oblique" Gender="feminine" LEMMA="acesta" MSD="Dd3fso---o" Number="singular" POS="DETERMINER" Person="third" Positioning="postnominal" Type="demonstrative" id="10.4" offset="31">acesteia</W>
+    <W EXTRA="tranzitiv" LEMMA="produce" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="10.5" offset="40">produc</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="flux" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="10.6" offset="47">fluxul</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="10.7" offset="54">și</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="reflux" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="10.8" offset="57">refluxul</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="mare" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="10.9" offset="66">mărilor</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="10.10" offset="74">și</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="ocean" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="10.11" offset="77">oceanelor</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="10.12" offset="87">și</W>
+    <W LEMMA="”" MSD="DBLQ" id="10.13" offset="90">„</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="alungire" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="10.14" offset="91">alungirea</W>
+    <W LEMMA="”" MSD="DBLQ" id="10.15" offset="100">”</W>
+    <W Case="oblique" Definiteness="yes" Gender="masculine" LEMMA="timp" MSD="Ncmsoy" Number="singular" POS="NOUN" Type="common" id="10.16" offset="102">timpului</W>
+    <W LEMMA="(" MSD="LPAR" id="10.17" offset="111">(</W>
+    <W LEMMA="Luna" MSD="Np" POS="NOUN" Type="proper" id="10.18" offset="112">Luna</W>
+    <W EXTRA="tranzitiv" LEMMA="provoca" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="10.19" offset="117">provoacă</W>
+    <W Case="direct" Gender="masculine" LEMMA="un" MSD="Timsr" Number="singular" POS="ARTICLE" Type="indefinite" id="10.20" offset="126">un</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="decalaj" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="10.21" offset="129">decalaj</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="10.22" offset="137">de</W>
+    <W EXTRA="NotInDict" LEMMA="2" MSD="M" POS="NUMERAL" id="10.23" offset="140">2</W>
+    <W EXTRA="NotInDict" LEMMA="ms" MSD="Np" POS="NOUN" Type="proper" id="10.24" offset="142">ms</W>
+    <W LEMMA="la" MSD="Sp" POS="ADPOSITION" id="10.25" offset="145">la</W>
+    <W Case="direct" LEMMA="fiecare" MSD="Di3-sr" Number="singular" POS="DETERMINER" Person="third" Type="indefinite" id="10.26" offset="148">fiecare</W>
+    <W EXTRA="NotInDict" LEMMA="100" MSD="M" POS="NUMERAL" id="10.27" offset="156">100</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="10.28" offset="160">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="an" MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="10.29" offset="163">ani</W>
+    <W LEMMA=")" MSD="RPAR" id="10.30" offset="166">)</W>
+    <W LEMMA="." MSD="PERIOD" id="10.31" offset="167">.</W>
+  </S>
+  <S id="11" offset="1204">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="distanță" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="11.1" offset="0">Distanța</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="orbital" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="11.2" offset="9">orbitală</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="curent" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="11.3" offset="18">curentă</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="11.4" offset="26">a</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="lună" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="11.5" offset="28">Lunii</W>
+    <W LEMMA="," MSD="COMMA" id="11.6" offset="33">,</W>
+    <W Case="direct" LEMMA="ce" MSD="Pw3--r" POS="PRONOUN" Person="third" Type="relative" id="11.7" offset="35">ce</W>
+    <W EXTRA="tranzitiv" LEMMA="reprezenta" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="11.8" offset="38">reprezintă</W>
+    <W LEMMA="în~jur~de" MSD="Rg" POS="ADVERB" id="11.9" offset="49">în jur de</W>
+    <W Form="letter" LEMMA="treizeci" MSD="Mc-p-l" Number="plural" POS="NUMERAL" Type="cardinal" id="11.10" offset="59">treizeci</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="11.11" offset="68">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="oară" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="11.12" offset="71">ori</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="diametru" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="11.13" offset="75">diametrul</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="pământ" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="11.14" offset="85">Pământului</W>
+    <W LEMMA="," MSD="COMMA" id="11.15" offset="95">,</W>
+    <W EXTRA="tranzitiv" LEMMA="cauza" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="11.16" offset="97">cauzează</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="asemănare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="11.17" offset="106">asemănarea</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="11.18" offset="117">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="mărime" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="11.19" offset="120">mărime</W>
+    <W LEMMA="dintre" MSD="Sp" POS="ADPOSITION" id="11.20" offset="127">dintre</W>
+    <W LEMMA="lună" MSD="Np" POS="NOUN" Type="proper" id="11.21" offset="134">Lună</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="11.22" offset="139">și</W>
+    <W LEMMA="soare" MSD="Np" POS="NOUN" Type="proper" id="11.23" offset="142">Soare</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="11.24" offset="148">pe</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="cer" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="11.25" offset="151">cer</W>
+    <W LEMMA="." MSD="PERIOD" id="11.26" offset="154">.</W>
+  </S>
+  <S id="12" offset="1360">
+    <W LEMMA="de~aceea" MSD="Rg" POS="ADVERB" id="12.1" offset="0">De aceea</W>
+    <W LEMMA="," MSD="COMMA" id="12.2" offset="8">,</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="soarea" MSD="Npfpry" Number="plural" POS="NOUN" Type="proper" id="12.3" offset="10">Soarele</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="12.4" offset="18">este</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:acoperi(tranzitiv)" Gender="masculine" LEMMA="acoperit" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="12.5" offset="23">acoperit</W>
+    <W LEMMA="aproape" MSD="Rg" POS="ADVERB" id="12.6" offset="32">aproape</W>
+    <W LEMMA="complet" MSD="Rg" POS="ADVERB" id="12.7" offset="40">complet</W>
+    <W LEMMA="în~timpul" MSD="Sp" POS="ADPOSITION" id="12.8" offset="48">în timpul</W>
+    <W Case="oblique" Gender="feminine" LEMMA="un" MSD="Tifso" Number="singular" POS="ARTICLE" Type="indefinite" id="12.9" offset="58">unei</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="eclipsă" MSD="Ncfson" Number="singular" POS="NOUN" Type="common" id="12.10" offset="63">eclipse</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="solar" MSD="Afpfson" Number="singular" POS="ADJECTIVE" id="12.11" offset="71">solare</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="total" MSD="Afpfson" Number="singular" POS="ADJECTIVE" id="12.12" offset="78">totale</W>
+    <W LEMMA="." MSD="PERIOD" id="12.13" offset="84">.</W>
+  </S>
+  <S id="13" offset="1446">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="13.1" offset="0">Luna</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="13.2" offset="5">este</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="singur" MSD="Afpmsry" Number="singular" POS="ADJECTIVE" id="13.3" offset="10">singurul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="obiect" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="13.4" offset="19">obiect</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="extraterestru" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="13.5" offset="26">extraterestru</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="13.6" offset="40">pe</W>
+    <W Case="direct" LEMMA="care" MSD="Pw3--r" POS="PRONOUN" Person="third" Type="relative" id="13.7" offset="43">care</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="om" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="13.8" offset="48">omul</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="13.9" offset="53">a</W>
+    <W EXTRA="tranzitiv" LEMMA="reuși" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="13.10" offset="55">reușit</W>
+    <W LEMMA="să" MSD="Qs" POS="PARTICLE" Type="conjunctive" id="13.11" offset="62">să</W>
+    <W EXTRA="intranzitiv" LEMMA="ateriza" MSD="Vmsp3" Mood="conjunctive" POS="VERB" Person="third" Tense="present" Type="predicative" id="13.12" offset="65">aterizeze</W>
+    <W LEMMA="." MSD="PERIOD" id="13.13" offset="74">.</W>
+  </S>
+  <S id="14" offset="1522">
+    <W LEMMA="în~timp~ce" MSD="Cs" POS="CONJUNCTION" id="14.1" offset="0">În timp ce</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="program" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="14.2" offset="11">programul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="sovietic" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="14.3" offset="21">sovietic</W>
+    <W EXTRA="NotInDict" LEMMA="Union's" MSD="Np" POS="NOUN" Type="proper" id="14.4" offset="30">Union's</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="Luna" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="14.5" offset="38">Luna</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="14.6" offset="43">a</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="14.7" offset="45">fost</W>
+    <W Case="direct" Definiteness="yes" Form="letter" Gender="masculine" LEMMA="primul" MSD="Momsrly" Number="singular" POS="NUMERAL" Type="ordinal" id="14.8" offset="50">primul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="apt" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="14.9" offset="57">apt</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="14.10" offset="61">în</W>
+    <W EXTRA="NotInDict" LEMMA="1959" MSD="M" POS="NUMERAL" id="14.11" offset="64">1959</W>
+    <W LEMMA="să" MSD="Qs" POS="PARTICLE" Type="conjunctive" id="14.12" offset="69">să</W>
+    <W EXTRA="tranzitiv" LEMMA="trimite" MSD="Vmsp3" Mood="conjunctive" POS="VERB" Person="third" Tense="present" Type="predicative" id="14.13" offset="72">trimită</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="sondă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="14.14" offset="80">sonde</W>
+    <W LEMMA="fără" MSD="Sp" POS="ADPOSITION" id="14.15" offset="86">fără</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="om" MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="14.16" offset="91">oameni</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="14.17" offset="98">pe</W>
+    <W LEMMA="lună" MSD="Np" POS="NOUN" Type="proper" id="14.18" offset="101">Lună</W>
+    <W LEMMA="," MSD="COMMA" id="14.19" offset="105">,</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="program" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="14.20" offset="107">programul</W>
+    <W EXTRA="NotInDict" LEMMA="Apollo" MSD="Np" POS="NOUN" Type="proper" id="14.21" offset="117">Apollo</W>
+    <W Case="direct" Gender="masculine" LEMMA="al" MSD="Tsmsr" Number="singular" POS="ARTICLE" Type="possessive" id="14.22" offset="124">al</W>
+    <W EXTRA="NotInDict" LEMMA="NASA" MSD="Np" POS="NOUN" Type="proper" id="14.23" offset="127">NASA</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="14.24" offset="132">a</W>
+    <W EXTRA="tranzitiv" LEMMA="realiza" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="14.25" offset="134">realizat</W>
+    <W Case="direct" Definiteness="yes" Form="letter" Gender="feminine" LEMMA="prim" MSD="Mofsrly" Number="singular" POS="NUMERAL" Type="ordinal" id="14.26" offset="143">prima</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="misiune" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="14.27" offset="149">misiune</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="14.28" offset="157">cu</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="om" MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="14.29" offset="160">oameni</W>
+    <W LEMMA="." MSD="PERIOD" id="14.30" offset="166">.</W>
+  </S>
+  <S id="15" offset="1690">
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="NASA" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="15.1" offset="0">NASA</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="15.2" offset="5">a</W>
+    <W EXTRA="tranzitiv" LEMMA="începe" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="15.3" offset="7">început</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="15.4" offset="15">cu</W>
+    <W Case="direct" Gender="feminine" LEMMA="un" MSD="Tifsr" Number="singular" POS="ARTICLE" Type="indefinite" id="15.5" offset="18">o</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="misiune" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="15.6" offset="20">misiune</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="15.7" offset="28">în</W>
+    <W EXTRA="NotInDict" LEMMA="1968" MSD="M" POS="NUMERAL" id="15.8" offset="31">1968</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="15.9" offset="36">cu</W>
+    <W EXTRA="NotInDict" LEMMA="Apollo" MSD="Np" POS="NOUN" Type="proper" id="15.10" offset="39">Apollo</W>
+    <W EXTRA="NotInDict" LEMMA="8" MSD="M" POS="NUMERAL" id="15.11" offset="46">8</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="15.12" offset="48">și</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="15.13" offset="51">cu</W>
+    <W Case="direct" Gender="feminine" LEMMA="altul" MSD="Pi3fpr" Number="plural" POS="PRONOUN" Person="third" Type="indefinite" id="15.14" offset="54">altele</W>
+    <W LEMMA="între" MSD="Sp" POS="ADPOSITION" id="15.15" offset="61">între</W>
+    <W EXTRA="NotInDict" LEMMA="1969" MSD="M" POS="NUMERAL" id="15.16" offset="67">1969</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="15.17" offset="72">și</W>
+    <W EXTRA="NotInDict" LEMMA="1972" MSD="M" POS="NUMERAL" id="15.18" offset="75">1972</W>
+    <W LEMMA="," MSD="COMMA" id="15.19" offset="79">,</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="15.20" offset="81">cu</W>
+    <W EXTRA="NotInDict" LEMMA="Apollo" MSD="Np" POS="NOUN" Type="proper" id="15.21" offset="84">Apollo</W>
+    <W EXTRA="NotInDict" LEMMA="11" MSD="M" POS="NUMERAL" id="15.22" offset="91">11</W>
+    <W LEMMA="." MSD="PERIOD" id="15.23" offset="93">.</W>
+  </S>
+  <S id="16" offset="1785">
+    <W Case="direct" Gender="feminine" LEMMA="acest" MSD="Dd3fpr---e" Number="plural" POS="DETERMINER" Person="third" Positioning="prenominal" Type="demonstrative" id="16.1" offset="0">Aceste</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="misiune" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="16.2" offset="7">misiuni</W>
+    <W LEMMA="avea" MSD="Vaip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="16.3" offset="15">au</W>
+    <W EXTRA="tranzitiv" LEMMA="aduce" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="16.4" offset="18">adus</W>
+    <W LEMMA="peste" MSD="Sp" POS="ADPOSITION" id="16.5" offset="23">peste</W>
+    <W EXTRA="NotInDict" LEMMA="380" MSD="M" POS="NUMERAL" id="16.6" offset="29">380</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="16.7" offset="33">de</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="Kg" MSD="Npmson" Number="singular" POS="NOUN" Type="proper" id="16.8" offset="36">Kg</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="16.9" offset="39">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="rocă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="16.10" offset="42">roci</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="lunar" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="16.11" offset="47">lunare</W>
+    <W LEMMA="," MSD="COMMA" id="16.12" offset="53">,</W>
+    <W Case="direct" LEMMA="ce" MSD="Pw3--r" POS="PRONOUN" Person="third" Type="relative" id="16.13" offset="55">ce</W>
+    <W LEMMA="avea" MSD="Vaip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="16.14" offset="58">au</W>
+    <W EXTRA="tranzitiv" LEMMA="ajuta" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="16.15" offset="61">ajutat</W>
+    <W LEMMA="la" MSD="Sp" POS="ADPOSITION" id="16.16" offset="68">la</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="dezvoltare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="16.17" offset="71">dezvoltarea</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="înțelegere" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="16.18" offset="83">înțelegerii</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="origine" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="16.19" offset="95">originii</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="geologic" MSD="Afpfson" Number="singular" POS="ADJECTIVE" id="16.20" offset="104">geologice</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="16.21" offset="114">a</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="lună" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="16.22" offset="116">Lunii</W>
+    <W LEMMA="(" MSD="LPAR" id="16.23" offset="122">(</W>
+    <W Case="direct" LEMMA="sine" MSD="Px3--r" POS="PRONOUN" Person="third" Type="reflexive" id="16.24" offset="123">se</W>
+    <W EXTRA="tranzitiv" LEMMA="crede" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="16.25" offset="126">crede</W>
+    <W LEMMA="că" MSD="Cs" POS="CONJUNCTION" id="16.26" offset="132">că</W>
+    <W Case="direct" LEMMA="sine" MSD="Px3--r" POS="PRONOUN" Person="third" Type="reflexive" id="16.27" offset="135">s-</W>
+    <W LEMMA="avea" MSD="Vaip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="16.28" offset="137">au</W>
+    <W EXTRA="tranzitiv" LEMMA="forma" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="16.29" offset="140">format</W>
+    <W LEMMA="acum" MSD="Rg" POS="ADVERB" id="16.30" offset="147">acum</W>
+    <W LEMMA="aproximativ" MSD="Rg" POS="ADVERB" id="16.31" offset="152">aproximativ</W>
+    <W EXTRA="NotInDict" LEMMA="4,5" MSD="Sp" POS="ADPOSITION" id="16.32" offset="164">4,5</W>
+    <W Case="direct" Definiteness="no" Form="letter" Gender="feminine" LEMMA="miliard" MSD="Mcfprln" Number="plural" POS="NUMERAL" Type="cardinal" id="16.33" offset="168">miliarde</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="16.34" offset="177">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="an" MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="16.35" offset="180">ani</W>
+    <W LEMMA="întru" MSD="Sp" POS="ADPOSITION" id="16.36" offset="184">într-</W>
+    <W Case="direct" Gender="masculine" LEMMA="un" MSD="Timsr" Number="singular" POS="ARTICLE" Type="indefinite" id="16.37" offset="189">un</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="impact" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="16.38" offset="192">impact</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="16.39" offset="199">cu</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="Terra" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="16.40" offset="202">Terra</W>
+    <W LEMMA=")" MSD="RPAR" id="16.41" offset="207">)</W>
+    <W LEMMA="," MSD="COMMA" id="16.42" offset="208">,</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="16.43" offset="210">a</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="structură" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="16.44" offset="212">structurii</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="intern" MSD="Afpfson" Number="singular" POS="ADJECTIVE" id="16.45" offset="223">interne</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="16.46" offset="231">și</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="16.47" offset="234">a</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="istorie" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="16.48" offset="236">istoriei</W>
+    <W Case="oblique" Gender="feminine" LEMMA="său" MSD="Ds3fsos" Number="singular" POS="DETERMINER" Person="third" Possessor_number="singular" Type="possessive" id="16.49" offset="245">sale</W>
+    <W LEMMA="." MSD="PERIOD" id="16.50" offset="249">.</W>
+  </S>
+  <S id="17" offset="2036">
+    <W LEMMA="după" MSD="Sp" POS="ADPOSITION" id="17.1" offset="0">După</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="misiune" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="17.2" offset="5">misiunea</W>
+    <W Case="oblique" Gender="masculine" LEMMA="el" MSD="Tfmso" Number="singular" POS="ARTICLE" Type="definite" id="17.3" offset="14">lui</W>
+    <W EXTRA="NotInDict" LEMMA="Apollo" MSD="Np" POS="NOUN" Type="proper" id="17.4" offset="18">Apollo</W>
+    <W EXTRA="NotInDict" LEMMA="17" MSD="M" POS="NUMERAL" id="17.5" offset="25">17</W>
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="17.6" offset="28">din</W>
+    <W EXTRA="NotInDict" LEMMA="1972" MSD="M" POS="NUMERAL" id="17.7" offset="32">1972</W>
+    <W LEMMA="," MSD="COMMA" id="17.8" offset="36">,</W>
+    <W LEMMA="Luna" MSD="Np" POS="NOUN" Type="proper" id="17.9" offset="38">Luna</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="17.10" offset="43">a</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="17.11" offset="45">fost</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:vizita(tranzitiv)" Gender="feminine" LEMMA="vizitat" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="17.12" offset="50">vizitată</W>
+    <W LEMMA="numai" MSD="Rg" POS="ADVERB" id="17.13" offset="59">numai</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="17.14" offset="65">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="sondă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="17.15" offset="68">sonde</W>
+    <W LEMMA="fără" MSD="Sp" POS="ADPOSITION" id="17.16" offset="74">fără</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="personal" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="17.17" offset="79">personal</W>
+    <W LEMMA="." MSD="PERIOD" id="17.18" offset="87">.</W>
+  </S>
+  <S id="18" offset="2125">
+    <W LEMMA="din" MSD="Sp" POS="ADPOSITION" id="18.1" offset="0">Din</W>
+    <W EXTRA="NotInDict" LEMMA="2004" MSD="M" POS="NUMERAL" id="18.2" offset="4">2004</W>
+    <W LEMMA="," MSD="COMMA" id="18.3" offset="8">,</W>
+    <W LEMMA="Japonia" MSD="Np" POS="NOUN" Type="proper" id="18.4" offset="10">Japonia</W>
+    <W LEMMA="," MSD="COMMA" id="18.5" offset="17">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="China" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="18.6" offset="19">China</W>
+    <W LEMMA="," MSD="COMMA" id="18.7" offset="24">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="India" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="18.8" offset="26">India</W>
+    <W LEMMA="," MSD="COMMA" id="18.9" offset="31">,</W>
+    <W LEMMA="Statele~Unite~ale~Americii" MSD="Np" POS="NOUN" Type="proper" id="18.10" offset="33">Statele Unite ale Americii</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="18.11" offset="60">și</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="agenție" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="18.12" offset="63">Agenția</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="spațial" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="18.13" offset="71">Spațială</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="european" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="18.14" offset="80">Europeană</W>
+    <W LEMMA="avea" MSD="Vaip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="18.15" offset="90">au</W>
+    <W EXTRA="NotInDict" LEMMA="trims" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="18.16" offset="93">trims</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="sondă" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="18.17" offset="99">sonde</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="18.18" offset="105">pe</W>
+    <W LEMMA="lună" MSD="Np" POS="NOUN" Type="proper" id="18.19" offset="108">Lună</W>
+    <W LEMMA="." MSD="PERIOD" id="18.20" offset="112">.</W>
+  </S>
+  <S id="19" offset="2239">
+    <W Case="direct" Definiteness="yes" EXTRA="ParticipleLemma:rezulta(intranzitiv)" Gender="masculine" LEMMA="rezultat" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="19.1" offset="0">Rezultatul</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="misiune" MSD="Ncfpoy" Number="plural" POS="NOUN" Type="common" id="19.2" offset="11">misiunilor</W>
+    <W LEMMA="avea" MSD="Vaip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="auxiliary" id="19.3" offset="22">a</W>
+    <W EXTRA="tranzitiv" LEMMA="duce" MSD="Vmp" Mood="participle" POS="VERB" Type="predicative" id="19.4" offset="24">dus</W>
+    <W LEMMA="la" MSD="Sp" POS="ADPOSITION" id="19.5" offset="28">la</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="confirmare" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="19.6" offset="31">confirmarea</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="descoperire" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="19.7" offset="43">descoperirii</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="apă" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="19.8" offset="56">apei</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="lunar" MSD="Afpfson" Number="singular" POS="ADJECTIVE" id="19.9" offset="61">lunare</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:îngheța(tranzitiv)" Gender="feminine" LEMMA="înghețat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="19.10" offset="68">înghețate</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="19.11" offset="78">în</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="crater" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="19.12" offset="81">craterele</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:umbri(tranzitiv)" Gender="feminine" LEMMA="umbrit" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="19.13" offset="91">umbrite</W>
+    <W LEMMA="de~la" MSD="Sp" POS="ADPOSITION" id="19.14" offset="99">de la</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="pol" MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="19.15" offset="105">poli</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="19.16" offset="110">și</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:lega(tranzitiv)" Gender="feminine" LEMMA="legat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="19.17" offset="113">legate</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="19.18" offset="120">în</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="regolit" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="19.19" offset="123">regolitul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="lunar" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="19.20" offset="133">lunar</W>
+    <W LEMMA="." MSD="PERIOD" id="19.21" offset="138">.</W>
+  </S>
+  <S id="20" offset="2379">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="viitor" MSD="Afpfpry" Number="plural" POS="ADJECTIVE" id="20.1" offset="0">Viitoarele</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="misiune" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="20.2" offset="11">misiuni</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="spațial" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="20.3" offset="19">spațiale</W>
+    <W LEMMA="cu" MSD="Sp" POS="ADPOSITION" id="20.4" offset="28">cu</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="personal" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="20.5" offset="31">personal</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="omenesc" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="20.6" offset="40">omenesc</W>
+    <W EXTRA="intranzitiv" LEMMA="fi" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="20.7" offset="48">sunt</W>
+    <W LEMMA="deja" MSD="Rg" POS="ADVERB" id="20.8" offset="53">deja</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:planifica(tranzitiv)" Gender="feminine" LEMMA="planificat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="20.9" offset="58">planificate</W>
+    <W LEMMA="." MSD="PERIOD" id="20.10" offset="69">.</W>
+  </S>
+  <S id="21" offset="2450">
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="lună" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="21.1" offset="0">Luna</W>
+    <W EXTRA="tranzitiv" LEMMA="rămâne" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="21.2" offset="5">rămâne</W>
+    <W LEMMA="," MSD="COMMA" id="21.3" offset="11">,</W>
+    <W LEMMA="după~cum" MSD="Cs" POS="CONJUNCTION" id="21.4" offset="13">după cum</W>
+    <W EXTRA="tranzitiv" LEMMA="spune" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="21.5" offset="22">spune</W>
+    <W EXTRA="NotInDict" LEMMA="Outer" MSD="Np" POS="NOUN" Type="proper" id="21.6" offset="28">Outer</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="Space" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="21.7" offset="34">Space</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="Treaty" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="21.8" offset="40">Treaty</W>
+    <W LEMMA="," MSD="COMMA" id="21.9" offset="46">,</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="liber" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="21.10" offset="48">liberă</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="21.11" offset="55">în</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="explorare" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="21.12" offset="58">explorare</W>
+    <W LEMMA="pentru" MSD="Sp" POS="ADPOSITION" id="21.13" offset="68">pentru</W>
+    <W Case="direct" Gender="feminine" LEMMA="tot" MSD="Di3fpr" Number="plural" POS="DETERMINER" Person="third" Type="indefinite" id="21.14" offset="75">toate</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="națiune" MSD="Ncfpry" Number="plural" POS="NOUN" Type="common" id="21.15" offset="81">națiunile</W>
+    <W LEMMA="," MSD="COMMA" id="21.16" offset="90">,</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="21.17" offset="92">în</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="condiție" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="21.18" offset="95">condiții</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="pașnic" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="21.19" offset="104">pașnice</W>
+    <W LEMMA="." MSD="PERIOD" id="21.20" offset="111">.</W>
+  </S>
+</POS_Output>

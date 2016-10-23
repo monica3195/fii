@@ -1,0 +1,229 @@
+* {
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.main-header {
+  margin: auto;
+  height: 40px;
+  padding: 1em 2em;
+  border: 2px solid #000323;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: #000000;
+}
+
+.main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.login-button{
+    color: #00FFFF;
+}
+
+.logo::before {
+    color: #fff;
+    content: "Ad wise!";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #00FFFF;
+}
+
+.logo {
+    display: block;
+    float: left;
+}
+
+.navigation {
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.main-nav,
+.drop-nav {
+  background: #A9A9A9;
+}
+.main-nav {
+  float: right;
+  border-radius: 4px;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px #ffffff;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+.dropdown,
+.flyout {
+  position: relative;
+}
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%;
+}
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+}
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+.flyout:hover a,
+.flyout-nav {
+  background: #A9A9A9;
+}
+
+.page {
+    width: 1920px;
+}
+
+.post-question {
+  background-color: #FFFFCC;
+  padding-top: 30px;
+  float: left;
+  padding-left: 30px;
+  height: 235px;
+  width: 1920px;
+  box-sizing: border-box;
+}
+
+.textarea-button {
+    width: 1150px;
+    float: left;
+}
+
+.post-button {
+    float: left;
+    width: 300px;
+}
+
+textarea {
+    font-size: 20px;
+    resize: none;
+}
+
+.tags {
+    float: left;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.tag {
+    margin-top: 7px;
+}
+
+.categories {
+    margin-left: 10px;
+    max-width: 480px;
+    float: left;
+    max-height: 500px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category {
+    width: 150px;
+    float: left;
+    padding-right: 5px;
+
+}
+
+.separator {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 240px;
+    max-width: 100%;
+}
+
+hr[class=question-delimiter-top] {
+    margin-bottom: 10px;
+}
+
+.info {
+    float: left;
+    max-width: 350px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+.stats {
+    max-width: 330px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.likes,.dislikes,.views {
+    background-color: #FFF8DC;
+    width: 100px;
+    margin-right: 10px;
+    height: 50px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}
+
+.value {
+    padding-bottom: 5px;
+}
+
+.general-info {
+    width: 330px;
+    background-color: #FFF8DC;
+    margin-top: 10px;
+    height: 80px;
+    float: left;
+}
+
+.posted-when, .posted-by, .category-name {
+    margin-top: 5px;
+}
+
+.content {
+    font-size: 20px;
+    height: 210px;
+    text-align: center;
+    width: 1470px;
+    float: left;
+    text-align: left;
+    margin: 10px;
+}

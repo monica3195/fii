@@ -1,0 +1,142 @@
+package Broker;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.security.InvalidKeyException;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.Signature;
+import java.security.SignatureException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+/**
+ * A server program which accepts requests from clients to
+ * capitalize strings.  When clients connect, a new thread is
+ * started to handle an interactive dialog in which the client
+ * sends in a string and the server thread sends back the
+ * capitalized version of the string.
+ *
+ * The program is runs in an infinite loop, so shutdown in platform
+ * dependent.  If you ran it from a console window with the "java"
+ * interpreter, Ctrl+C generally will shut it down.
+ */
+public class Broker {
+
+    /**
+     * Application method to run the server runs in an infinite loop
+     * listening on port 9898.  When a connection is requested, it
+     * spawns a new thread to do the servicing and immediately returns
+     * to listening.  The server keeps a unique client number for each
+     * client that connects just to show interesting logging
+     * messages.  It is certainly not necessary to do this.
+     */
+	static public KeyPair keyPair;
+	private static String B = "127.0.0.1:9000";
+	private static String separator = ",";
+	
+    public static void main(String[] args) throws Exception {
+        System.out.println("The capitalization server is running.");
+        int clientNumber = 0;
+        ServerSocket listener = new ServerSocket(9000);
+        try {
+        	KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
+            kpg.initialize(1024);
+            keyPair = kpg.genKeyPair();
+
+            while (true) {
+                new BrokerThread(listener.accept(), clientNumber++).start();
+            }
+        } finally {
+            listener.close();
+        }
+    }
+
+    /**
+     * A private thread to handle capitalization requests on a particular
+     * socket.  The client terminates the dialogue by sending a single line
+     * containing only a period.
+     */
+    private static class BrokerThread extends Thread {
+        private Socket socket;
+        private int clientNumber;
+
+        public BrokerThread(Socket socket, int clientNumber) {
+            this.socket = socket;
+            this.clientNumber = clientNumber;
+            log("New connection with client# " + clientNumber + " at " + socket);
+        }
+
+        public void run() {
+            try {
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+
+                // Get messages from the client, line by line;
+                while (true) {
+                	
+                    String input = in.readLine();
+                    
+                    if (input == null || input.equals(".")) {
+                        break;
+                    }
+                    else if(input.equals("user"))
+                    {
+                    	String U = in.readLine();
+                    	String Ku = in.readLine();
+                    	
+                    	out.println(getUserCertificate(U, Ku));
+                    	
+                    	break;
+                    }
+                    else if(input == "vanzator")
+                    {
+                    	
+                    }
+                    //out.println(input.toUpperCase());
+                }
+            } catch (IOException e) {
+                log("Error handling client# " + clientNumber + ": " + e);
+            } finally {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    log("Couldn't close a socket, what's going on?");
+                }
+                log("Connection with client# " + clientNumber + " closed");
+            }
+        }
+
+        private String getUserCertificate(String U, String Ku) throws UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException, SignatureException
+        {
+        	//return "sigb(B,U,Kb,Ku,exp,info)";
+        	GregorianCalendar gc = new GregorianCalendar();
+        	gc.add(Calendar.DATE, 1);
+        	String exp = Integer.toString(gc.get(Calendar.DATE));
+        	String m = B + 
+            byte[] data = "test".getBytes("UTF8");
+
+            Signature sig = Signature.getInstance("SHA1WithRSA");
+            sig.initSign(keyPair.getPrivate());
+            sig.update(data);
+            byte[] signatureBytes = sig.sign();
+            System.out.println("Singature:" + signatureBytes.toString());
+        	
+            //sig.initVerify(keyPair.getPublic());
+            //sig.update(data);
+
+            //System.out.println(sig.verify(signatureBytes));
+        }
+        
+        private void log(String message) {
+            System.out.println(message);
+        }
+    }
+
+}

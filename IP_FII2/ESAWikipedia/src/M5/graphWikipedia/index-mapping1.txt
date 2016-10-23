@@ -1,0 +1,10 @@
+﻿606:2:Muzică
+606:3:Iris (formație românească)
+606:5:Enciclopedie
+606:9:Fizica
+606:12:Biologie
+606:20:Religie
+606:21:Lună
+606:32:Pământ
+606:67:Karate
+606:83:Economie

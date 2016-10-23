@@ -1,0 +1,27 @@
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe.config
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.pdb
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csprojResolveAssemblyReference.cache
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Form1.resources
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Properties.Resources.resources
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csproj.GenerateResource.Cache
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.exe
+D:\Facultate\Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.pdb
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe.config
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.exe
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.pdb
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\bin\Debug\Tema2CN.pdb
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Form1.resources
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Properties.Resources.resources
+C:\Users\Cristi\Desktop\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csproj.GenerateResource.Cache
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe.config
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.exe
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.pdb
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.exe
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\bin\Debug\Tema2CN.pdb
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csprojResolveAssemblyReference.cache
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Form1.resources
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.Properties.Resources.resources
+D:\Facultate\Anul III\Semestrul II\Proiecte Visual Studio\Tema2CN\Tema2CN\obj\Debug\Tema2CN.csproj.GenerateResource.Cache

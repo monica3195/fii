@@ -1,0 +1,1 @@
+este un de a calculatoarelor, conceput de la pentru a scrie sistemul de operare unix. a rămas unul dintre cele mai folosite limbaje pentru scrierea programelor.există multe extinderi ale limbajului, printre care c++, perl, java, și c#. 

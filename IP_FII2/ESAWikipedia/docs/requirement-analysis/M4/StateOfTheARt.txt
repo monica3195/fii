@@ -1,0 +1,24 @@
+What is ESA-Wikipedia?
+
+1. Introduction
+
+	How related are “cat” and “mouse”? And what about “preparing a manuscript” and “writing an article”? Reasoning about semantic relatedness of natural language utterances is routinely performed by humans but remains an unsurmountable obstacle for computers. Humans do not judge text relatedness merely at the level of text words. Words trigger reasoning at a much deeper level that manipulates concepts—the basic units of meaning that serve humans to organize and share their knowledge. Thus, humans interpret the specific wording of a document in the much larger context of their background knowledge and experience.
+
+2. What is ESA?
+	Explicit Semantic Analysis (ESA) was introduced by Gabrilovich and Markovitch (2007) [1], and allows the semantic comparison of two texts with the help of explicitly defined concepts.
+	ESA is an algebraic model in which the text is represented with a vector of the explicit concepts as dimensions. The magnitude of each dimension in the vector is the associativity weight of the text to that explicit concept/dimension. To quantify this associativity, the textual content related to the explicit concept/dimension is utilized. This weight can be calculated by considering different methods, for instance, tf-idf score [2].
+*2.  Cross-lingual Explicit Semantic Analysis (CLESA) [3]
+	The articles in Wikipedia are linked together across language, and this cross-lingual linked structure can provide a mapping of a vector in one language to the other.
+
+3. Why Wikipedia?	
+	Our approach is inspired by the desire to augment text representation with massive amounts of world knowledge. We represent texts as a weighted mixture of a predetermined set of natural concepts, which are defined by humans themselves and can be easily explained. To achieve this aim, we use concepts defined by Wikipedia articles, e.g., COMPUTER SCIENCE, INDIA, or LANGUAGE. An important advantage of our approach is thus the use of vast amounts of highly organized human knowledge encoded in Wikipedia. Furthermore, Wikipedia undergoes constant development so its breadth and depth steadily increase over time. We opted to use Wikipedia because it is currently the largest knowledge repository on the Web. Wikipedia is available in dozens of languages, while its English version is the largest of all with 400+ million words in over one million articles (compared to 44 million words in 65,000 articles in Encyclopaedia Britannica).
+	We use machine learning techniques to build a semantic interpreter that maps fragments of natural language text into a weighted sequence of Wikipedia concepts ordered by their relevance to the input. This way, input texts are represented as weighted vectors of concepts, called interpretation vectors. The meaning of a text fragment is thus interpreted in terms of its affinity with a host of Wikipedia concepts.
+
+	References:
+	[1] Gabrilovich and Markovitch (2007) - https://www.jair.org/media/2669/live-2669-4346-jair.pdf
+	[2] tf-idf score - http://en.wikipedia.org/wiki/Tf%E2%80%93idf
+	[3] CLESA - http://www.aclweb.org/anthology/W12-5703
+
+	Sources:
+	http://ceur-ws.org/Vol-1174/CLEF2008wn-adhoc-SorgEt2008.pdf
+	https://www.aaai.org/Papers/IJCAI/2007/IJCAI07-259.pdf
